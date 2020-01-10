@@ -223,6 +223,28 @@ public
 	end DigitalPart_Thread_CheckAnalogicalSwitch_1.DigitalPart_Thread_CheckAnalogicalSwitch_1_impl;
 
 	thread implementation DigitalPart_Thread_CheckAnalogicalSwitch_2.DigitalPart_Thread_CheckAnalogicalSwitch_2_impl
+		subcomponents
+			temp: data Base_Types::Boolean;
+		annex behavior_specification {**
+		  states
+            s0 : initial complete state;
+            s1 : state;
+            s2 : complete state;
+          transitions
+            s0 -[on dispatch Handle]-> s1 {
+            	temp := Handle
+            };
+            s1 -[]-> s2 {
+            	computation(20000ms..20000ms);
+            	if (temp = Handle) In_anomaly := false
+            	else 
+            		computation(1500ms..1500ms);
+            		if (Analogical_switch = "down")
+            			In_anomaly := true
+        			end if
+    			end if
+            };
+        **};
 	end DigitalPart_Thread_CheckAnalogicalSwitch_2.DigitalPart_Thread_CheckAnalogicalSwitch_2_impl;
 
 	thread implementation DigitalPart_Thread_CheckCircuitPressurized_1.DigitalPart_Thread_CheckCircuitPressurized_1_impl
