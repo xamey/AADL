@@ -27,6 +27,6 @@ end DigitalPart_Lights_Thread;
 					Anomaly            := In_anomaly
 				};
 		**};
-	end thread_lumieres.DigitalPart_Lights_Thread_impl;
+	end DigitalPart_Lights_Thread.DigitalPart_Lights_Thread_impl;
 	
 end DigitalPart_Lights_Thread;

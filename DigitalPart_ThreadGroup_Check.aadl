@@ -1,12 +1,24 @@
 package DigitalPart_ThreadGroup_Check
 public
-	with DigitalPart;
 	with Base_Types;
+	with Data_Model;
+
+	data handle_status
+		properties
+			Data_Model::Data_Representation => Enum;
+			Data_Model::Enumerators => ("up", "down");
+	end handle_status;
+
+	data switch_status
+		properties
+			Data_Model::Data_Representation => Enum;
+			Data_Model::Enumerators => ("open", "close");
+	end switch_status;
 
 	thread group DigitalPart_ThreadGroup_Check
 		features
-			Analogical_switch: in data port DigitalPart::handle_status;
-			Handle: in data port DigitalPart::handle_status;
+			Analogical_switch: in data port switch_status;
+			Handle: in data port handle_status;
 			Circuit_pressurized: in data port Base_Types::Boolean;
 			General_EV: in data port Base_Types::Boolean;
 			Door_closed: in data port Base_Types::Boolean;
@@ -23,133 +35,371 @@ public
 	thread group implementation DigitalPart_ThreadGroup_Check.DigitalPart_ThreadGroup_Check_impl
 		subcomponents
 			CheckAnalogicalSwitch_1_impl: thread DigitalPart_Thread_CheckAnalogicalSwitch_1.DigitalPart_Thread_CheckAnalogicalSwitch_1_impl;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent: thread DigitalPart_Thread_CheckAnalogicalSwitch_2.DigitalPart_Thread_CheckAnalogicalSwitch_2_impl;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent2: thread DigitalPart_Thread_CheckCircuitPressurized_1.DigitalPart_Thread_CheckCircuitPressurized_1_impl;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent3: thread DigitalPart_Thread_CheckCircuitPressurized_2.DigitalPart_Thread_CheckCircuitPressurized_2_impl;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent4: thread DigitalPart_Thread_CheckDoors_1.DigitalPart_Thread_CheckDoors_1_impl;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent5: thread DigitalPart_Thread_CheckDoors_2.DigitalPart_Thread_CheckDoors_2_impl;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent6: thread DigitalPart_Thread_CheckDoors_3.DigitalPart_Thread_CheckDoors_3_impl;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent7: thread DigitalPart_Thread_CheckDoors_4.DigitalPart_Thread_CheckDoors_4_impl;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent8: thread DigitalPart_Thread_CheckGears_1.DigitalPart_Thread_CheckGears_1_impl;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent9: thread DigitalPart_Thread_CheckGears_2.DigitalPart_Thread_CheckGears_2_impl;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent10: thread DigitalPart_Thread_CheckGears_3.DigitalPart_Thread_CheckGears_3_impl;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent11: thread DigitalPart_Thread_CheckGears_4.DigitalPart_Thread_CheckGears_4_impl;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12: thread DigitalPart_Thread_CheckResponse.DigitalPart_Thread_CheckResponse;
+		connections
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection: feature Handle -> CheckAnalogicalSwitch_1_impl.Handle;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection2: feature Handle -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent.Handle;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection3: feature Analogical_switch -> CheckAnalogicalSwitch_1_impl.Analogical_switch;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection4: feature Analogical_switch -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent.Analogical_switch;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection5: feature Circuit_pressurized -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent2.Circuit_pressurized;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection6: feature Circuit_pressurized -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent3.Circuit_pressurized;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection7: feature General_EV -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent2.General_EV;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection8: feature General_EV -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent3.General_EV;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection9: feature Door_closed -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent4.Door_closed;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection10: feature Open_EV -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent4.Open_EV;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection11: feature Open_EV -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent5.Open_EV;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection12: feature Door_open -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent5.Door_open;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection13: feature Close_EV -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent6.Close_EV;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection14: feature Door_open -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent6.Door_open;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection15: feature Door_closed -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent7.Door_closed;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection16: feature Close_EV -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent7.Close_EV;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection17: feature Retract_EV -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent8.Retract_EV;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection18: feature Gear_extended -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent8.Gear_extended;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection19: feature Gear_retracted -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent9.Gear_retracted;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection20: feature Retract_EV -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent9.Retract_EV;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection21: feature Gear_retracted -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent10.Gear_retracted;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection22: feature Extend_EV -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent10.Extend_EV;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection23: feature Extend_EV -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent11.Extend_EV;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection24: feature Gear_extended -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent11.Gear_extended;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection25: feature DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12.In_anomaly -> In_anomally;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection26: feature CheckAnalogicalSwitch_1_impl.In_anomaly -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12.In_anomaly_CheckAnalogicalSwitch_1;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection27: feature DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent.In_anomaly -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12.In_anomaly_CheckAnalogicalSwitch_2;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection28: feature DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent2.In_anomaly -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12.In_anomaly_CheckCircuitPressurized_1;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection29: feature DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent3.In_anomaly -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12.In_anomaly_CheckCircuitPressurized_2;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection30: feature DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent4.In_anomaly -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12.In_anomaly_CheckDoors_1;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection31: feature DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent5.In_anomaly -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12.In_anomaly_CheckDoors_2;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection32: feature DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent6.In_anomaly -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12.In_anomaly_CheckDoors_3;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection33: feature DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent7.In_anomaly -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12.In_anomaly_CheckDoors_4;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection34: feature DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent8.In_anomaly -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12.In_anomaly_CheckGears_1;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection35: feature DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent9.In_anomaly -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12.In_anomaly_CheckGears_2;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection36: feature DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent10.In_anomaly -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12.In_anomaly_CheckGears_3;
+			DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_connection37: feature DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent11.In_anomaly -> DigitalPart_ThreadGroup_Check_DigitalPart_ThreadGroup_Check_impl_new_subcomponent12.In_anomaly_CheckGears_4;
 	end DigitalPart_ThreadGroup_Check.DigitalPart_ThreadGroup_Check_impl;
 
 	thread DigitalPart_Thread_CheckAnalogicalSwitch_1
 		features
-			Analogical_switch: in data port DigitalPart::switch_status;
-			Handle: in data port DigitalPart::handle_status;
+			Analogical_switch: in data port switch_status;
+			Handle: in event data port handle_status;
 			In_anomaly: out data port Base_Types::Boolean;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
 	end DigitalPart_Thread_CheckAnalogicalSwitch_1;
 
 	thread DigitalPart_Thread_CheckAnalogicalSwitch_2
 		features
-			Analogical_switch: in data port DigitalPart::switch_status;
-			Handle: in data port DigitalPart::switch_status;
-			In_anomaly: out data port;
+			Analogical_switch: in data port switch_status;
+			Handle: in event data port handle_status;
+			In_anomaly: out data port Base_Types::Boolean;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
 	end DigitalPart_Thread_CheckAnalogicalSwitch_2;
 
 	thread DigitalPart_Thread_CheckCircuitPressurized_1
 		features
 			Circuit_pressurized: in data port Base_Types::Boolean;
-			General_EV: in data port Base_Types::Boolean;
+			General_EV: in event data port Base_Types::Boolean;
 			In_anomaly: out data port Base_Types::Boolean;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
 	end DigitalPart_Thread_CheckCircuitPressurized_1;
 
 	thread DigitalPart_Thread_CheckCircuitPressurized_2
 		features
 			Circuit_pressurized: in data port Base_Types::Boolean;
-			General_EV: in data port Base_Types::Boolean;
-			In_anomaly: out data port;
+			General_EV: in event data port Base_Types::Boolean;
+			In_anomaly: out data port Base_Types::Boolean;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
 	end DigitalPart_Thread_CheckCircuitPressurized_2;
 
 	thread DigitalPart_Thread_CheckDoors_1
 		features
 			Door_closed: in data port Base_Types::Boolean;
-			Open_EV: in data port Base_Types::Boolean;
-			In_anomaly: out data port;
+			Open_EV: in event data port Base_Types::Boolean;
+			In_anomaly: out data port Base_Types::Boolean;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
 	end DigitalPart_Thread_CheckDoors_1;
 
 	thread DigitalPart_Thread_CheckDoors_2
 		features
 			Door_open: in data port Base_Types::Boolean;
-			Open_EV: in data port Base_Types::Boolean;
-			In_anomaly: out data port;
+			Open_EV: in event data port Base_Types::Boolean;
+			In_anomaly: out data port Base_Types::Boolean;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
 	end DigitalPart_Thread_CheckDoors_2;
 
 	thread DigitalPart_Thread_CheckDoors_3
 		features
 			Door_open: in data port Base_Types::Boolean;
-			Close_EV: in data port Base_Types::Boolean;
-			In_anomaly: out data port;
+			Close_EV: in event data port Base_Types::Boolean;
+			In_anomaly: out data port Base_Types::Boolean;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
 	end DigitalPart_Thread_CheckDoors_3;
 
 	thread DigitalPart_Thread_CheckDoors_4
 		features
 			Door_closed: in data port Base_Types::Boolean;
-			Close_EV: in data port Base_Types::Boolean;
-			In_anomaly: out data port;
+			Close_EV: in event data port Base_Types::Boolean;
+			In_anomaly: out data port Base_Types::Boolean;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
 	end DigitalPart_Thread_CheckDoors_4;
 
 	thread DigitalPart_Thread_CheckGears_1
 		features
 			Gear_extended: in data port Base_Types::Boolean;
-			Retract_EV: in data port Base_Types::Boolean;
-			In_anomaly: out data port;
+			Retract_EV: in event data port Base_Types::Boolean;
+			In_anomaly: out data port Base_Types::Boolean;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
 	end DigitalPart_Thread_CheckGears_1;
 
 	thread DigitalPart_Thread_CheckGears_2
 		features
 			Gear_retracted: in data port Base_Types::Boolean;
-			Retract_EV: in data port Base_Types::Boolean;
-			In_anomaly: out data port;
+			Retract_EV: in event data port Base_Types::Boolean;
+			In_anomaly: out data port Base_Types::Boolean;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
 	end DigitalPart_Thread_CheckGears_2;
 
 	thread DigitalPart_Thread_CheckGears_3
 		features
 			Gear_retracted: in data port Base_Types::Boolean;
-			Extend_EV: in data port Base_Types::Boolean;
-			In_anomaly: out data port;
+			Extend_EV: in event data port Base_Types::Boolean;
+			In_anomaly: out data port Base_Types::Boolean;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
 	end DigitalPart_Thread_CheckGears_3;
 
 	thread DigitalPart_Thread_CheckGears_4
 		features
 			Gear_extended: in data port Base_Types::Boolean;
-			Extend_EV: in data port Base_Types::Boolean;
-			In_anomaly: out data port;
+			Extend_EV: in event data port Base_Types::Boolean;
+			In_anomaly: out data port Base_Types::Boolean;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
 	end DigitalPart_Thread_CheckGears_4;
 
 	thread implementation DigitalPart_Thread_CheckAnalogicalSwitch_1.DigitalPart_Thread_CheckAnalogicalSwitch_1_impl
+		annex behavior_specification {**
+		  states
+            s0 : initial complete state;
+            s1 : complete state;
+          transitions
+            s0 -[on dispatch Handle]-> s1 {
+            	computation(1000ms..1000ms);
+            	if (Handle = "open") In_anomaly := true
+            	else In_anomaly := false
+            	end if
+            };
+        **};
 	end DigitalPart_Thread_CheckAnalogicalSwitch_1.DigitalPart_Thread_CheckAnalogicalSwitch_1_impl;
 
 	thread implementation DigitalPart_Thread_CheckAnalogicalSwitch_2.DigitalPart_Thread_CheckAnalogicalSwitch_2_impl
 	end DigitalPart_Thread_CheckAnalogicalSwitch_2.DigitalPart_Thread_CheckAnalogicalSwitch_2_impl;
 
 	thread implementation DigitalPart_Thread_CheckCircuitPressurized_1.DigitalPart_Thread_CheckCircuitPressurized_1_impl
+		annex behavior_specification {**
+		  states
+            s0 : initial complete state;
+            s1 : complete state;
+          transitions
+            s0 -[on dispatch General_EV]-> s1 {
+            	if (General_EV = true)
+	            	computation(2000ms..2000ms);
+	            	if (Circuit_pressurized = false) In_anomaly := true
+	            	else In_anomaly := false
+	            	end if
+            	end if
+            };
+        **};
 	end DigitalPart_Thread_CheckCircuitPressurized_1.DigitalPart_Thread_CheckCircuitPressurized_1_impl;
 
 	thread implementation DigitalPart_Thread_CheckCircuitPressurized_2.DigitalPart_Thread_CheckCircuitPressurized_2_impl
+		annex behavior_specification {**
+		  states
+            s0 : initial complete state;
+            s1 : complete state;
+          transitions
+            s0 -[on dispatch General_EV]-> s1 {
+            	if (General_EV = false)
+	            	computation(10000ms..10000ms);
+	            	if (Circuit_pressurized = true) In_anomaly := true
+	            	else In_anomaly := false
+	            	end if
+            	end if
+            };
+        **};
 	end DigitalPart_Thread_CheckCircuitPressurized_2.DigitalPart_Thread_CheckCircuitPressurized_2_impl;
 
 	thread implementation DigitalPart_Thread_CheckDoors_1.DigitalPart_Thread_CheckDoors_1_impl
+		annex behavior_specification {**
+		  states
+            s0 : initial complete state;
+            s1 : complete state;
+          transitions
+            s0 -[on dispatch Open_EV]-> s1 {
+            	if (Open_EV = true)
+	            	computation(7000ms..7000ms);
+	            	if (Door_closed = true) In_anomaly := true
+	            	else In_anomaly := false
+	            	end if
+            	end if
+            };
+        **};
 	end DigitalPart_Thread_CheckDoors_1.DigitalPart_Thread_CheckDoors_1_impl;
 
 	thread implementation DigitalPart_Thread_CheckDoors_2.DigitalPart_Thread_CheckDoors_2_impl
+		annex behavior_specification {**
+		  states
+            s0 : initial complete state;
+            s1 : complete state;
+          transitions
+            s0 -[on dispatch Open_EV]-> s1 {
+            	if (Open_EV = true)
+	            	computation(7000ms..7000ms);
+	            	if (Door_open = false) In_anomaly := true
+	            	else In_anomaly := false
+	            	end if
+            	end if
+            };
+        **};
 	end DigitalPart_Thread_CheckDoors_2.DigitalPart_Thread_CheckDoors_2_impl;
 
 	thread implementation DigitalPart_Thread_CheckDoors_3.DigitalPart_Thread_CheckDoors_3_impl
+		annex behavior_specification {**
+		  states
+            s0 : initial complete state;
+            s1 : complete state;
+          transitions
+            s0 -[on dispatch Close_EV]-> s1 {
+            	if (Close_EV = true)
+	            	computation(7000ms..7000ms);
+	            	if (Door_open = true) In_anomaly := true
+	            	else In_anomaly := false
+	            	end if
+            	end if
+            };
+        **};
 	end DigitalPart_Thread_CheckDoors_3.DigitalPart_Thread_CheckDoors_3_impl;
 
 	thread implementation DigitalPart_Thread_CheckDoors_4.DigitalPart_Thread_CheckDoors_4_impl
+		annex behavior_specification {**
+		  states
+            s0 : initial complete state;
+            s1 : complete state;
+          transitions
+            s0 -[on dispatch Close_EV]-> s1 {
+            	if (Close_EV = true)
+	            	computation(7000ms..7000ms);
+	            	if (Door_closed = false) In_anomaly := true
+	            	else In_anomaly := false
+	            	end if
+            	end if
+            };
+        **};
 	end DigitalPart_Thread_CheckDoors_4.DigitalPart_Thread_CheckDoors_4_impl;
 
 	thread implementation DigitalPart_Thread_CheckGears_1.DigitalPart_Thread_CheckGears_1_impl
+		annex behavior_specification {**
+		  states
+            s0 : initial complete state;
+            s1 : complete state;
+          transitions
+            s0 -[on dispatch Retract_EV]-> s1 {
+            	if (Retract_EV = true)
+	            	computation(7000ms..7000ms);
+	            	if (Gear_extended = true) In_anomaly := true
+	            	else In_anomaly := false
+	            	end if
+            	end if
+            };
+        **};
 	end DigitalPart_Thread_CheckGears_1.DigitalPart_Thread_CheckGears_1_impl;
 
 	thread implementation DigitalPart_Thread_CheckGears_2.DigitalPart_Thread_CheckGears_2_impl
+		annex behavior_specification {**
+		  states
+            s0 : initial complete state;
+            s1 : complete state;
+          transitions
+            s0 -[on dispatch Retract_EV]-> s1 {
+            	if (Retract_EV = true)
+	            	computation(10000ms..10000ms);
+	            	if (Gear_retracted = false) In_anomaly := true
+	            	else In_anomaly := false
+	            	end if
+            	end if
+            };
+        **};
 	end DigitalPart_Thread_CheckGears_2.DigitalPart_Thread_CheckGears_2_impl;
 
 	thread implementation DigitalPart_Thread_CheckGears_3.DigitalPart_Thread_CheckGears_3_impl
+		annex behavior_specification {**
+		  states
+            s0 : initial complete state;
+            s1 : complete state;
+          transitions
+            s0 -[on dispatch Extend_EV]-> s1 {
+            	if (Extend_EV = true)
+	            	computation(7000ms..7000ms);
+	            	if (Gear_retracted = true) In_anomaly := true
+	            	else In_anomaly := false
+	            	end if
+            	end if
+            };
+        **};
 	end DigitalPart_Thread_CheckGears_3.DigitalPart_Thread_CheckGears_3_impl;
 
 	thread implementation DigitalPart_Thread_CheckGears_4.DigitalPart_Thread_CheckGears_4_impl
+		annex behavior_specification {**
+		  states
+            s0 : initial complete state;
+            s1 : complete state;
+          transitions
+            s0 -[on dispatch Extend_EV]-> s1 {
+            	if (Extend_EV = true)
+	            	computation(10000ms..10000ms);
+	            	if (Gear_extended = false) In_anomaly := true
+	            	else In_anomaly := false
+	            	end if
+            	end if
+            };
+        **};
 	end DigitalPart_Thread_CheckGears_4.DigitalPart_Thread_CheckGears_4_impl;
 
 	thread DigitalPart_Thread_CheckResponse
 		features
 			In_anomaly_CheckAnalogicalSwitch_1: in data port Base_Types::Boolean;
 			In_anomaly_CheckAnalogicalSwitch_2: in data port Base_Types::Boolean;
-			In_anomaly: out data port;
+			In_anomaly: out data port Base_Types::Boolean;
 			In_anomaly_CheckCircuitPressurized_1: in data port Base_Types::Boolean;
 			In_anomaly_CheckCircuitPressurized_2: in data port Base_Types::Boolean;
 			In_anomaly_CheckDoors_1: in data port Base_Types::Boolean;
@@ -164,22 +414,11 @@ public
 
 	thread implementation DigitalPart_Thread_CheckResponse.DigitalPart_Thread_CheckResponse
 		annex behavior_specification {**
-				states
+          states
             s0 : initial complete state;
           transitions
             s0 -[on dispatch]-> s0 {
-              In_anomaly := In_anomaly_CheckAnalogicalSwitch_1
-              or In_anomaly_CheckAnalogicalSwitch_2
-              or In_anomaly_CheckCircuitPressurized_1
-              or In_anomaly_CheckCircuitPressurized_2
-              or In_anomaly_CheckDoors_1
-              or In_anomaly_CheckDoors_2
-              or In_anomaly_CheckDoors_3
-              or In_anomaly_CheckDoors_4
-              or In_anomaly_CheckGears_1
-              or In_anomaly_CheckGears_2
-              or In_anomaly_CheckGears_3
-              or In_anomaly_CheckGears_4
+              In_anomaly := In_anomaly_CheckAnalogicalSwitch_1 or In_anomaly_CheckAnalogicalSwitch_2 or In_anomaly_CheckCircuitPressurized_1 or In_anomaly_CheckCircuitPressurized_2 or In_anomaly_CheckDoors_1 or In_anomaly_CheckDoors_2 or In_anomaly_CheckDoors_3 or In_anomaly_CheckDoors_4 or In_anomaly_CheckGears_1 or In_anomaly_CheckGears_2 or In_anomaly_CheckGears_3 or In_anomaly_CheckGears_4
             };
         **};
 	end DigitalPart_Thread_CheckResponse.DigitalPart_Thread_CheckResponse;

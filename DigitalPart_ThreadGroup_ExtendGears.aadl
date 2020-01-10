@@ -65,6 +65,14 @@ public
 
 	thread implementation Stimulate_Extend_EV.Stimulate_Extend_EV_impl
 		annex behavior_specification {**
+		  states
+            s0 : initial complete state;
+          transitions
+            s0 -[on dispatch]-> s0 {
+              if (Handle = "down" and Gears_extended = false and Door_open = true)
+                Extend_EV := true
+              end if
+            };
         **};
 	end Stimulate_Extend_EV.Stimulate_Extend_EV_impl;
 
