@@ -542,7 +542,7 @@
           <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection26</seg>
         </bo>
         <bendpoints>
-          <point x="322.0" y="2258.0"/>
+          <point x="412.0" y="2258.0"/>
         </bendpoints>
       </element>
       <element uuid="65ba01a2-c3dc-43e9-8fb5-8ea6aa0f38e0" manual="true">
@@ -557,7 +557,7 @@
           <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection27</seg>
         </bo>
         <bendpoints>
-          <point x="442.0" y="2212.0"/>
+          <point x="532.0" y="2212.0"/>
         </bendpoints>
       </element>
       <element uuid="1ae3920f-d102-4457-ae64-ed3bd93e89e7" manual="true">
@@ -572,7 +572,7 @@
           <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection28</seg>
         </bo>
         <bendpoints>
-          <point x="396.0" y="2302.0"/>
+          <point x="486.0" y="2302.0"/>
         </bendpoints>
       </element>
       <element uuid="bb12daf7-d508-4c22-8715-90b9abac1925" manual="true">
@@ -587,7 +587,7 @@
           <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection29</seg>
         </bo>
         <bendpoints>
-          <point x="352.0" y="2354.0"/>
+          <point x="442.0" y="2354.0"/>
         </bendpoints>
       </element>
       <element uuid="1d19e11c-9156-4656-9459-8338b824ebde" manual="true">
@@ -602,6 +602,168 @@
           <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection3</seg>
         </bo>
       </element>
+      <element uuid="bc560bd8-401c-456b-93a7-1f93963f1556" manual="true">
+        <element uuid="4a12dbaa-85e5-4af3-a7ed-b456c1b02b3f" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection30</seg>
+        </bo>
+        <bendpoints>
+          <point x="2226.0" y="2660.0"/>
+          <point x="2226.0" y="2518.0"/>
+          <point x="1422.0" y="2518.0"/>
+          <point x="500.0" y="2518.0"/>
+          <point x="500.0" y="2406.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="edec5d87-8d96-4b87-a12f-4495864a0405" manual="true">
+        <element uuid="d1c77be0-83af-4c55-8632-b9b516dfd49a" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection31</seg>
+        </bo>
+        <bendpoints>
+          <point x="432.0" y="2894.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="6f752014-45a6-4a8f-bc7c-c19f219570d5" manual="true">
+        <element uuid="d56133ca-0a73-4895-bee8-a295cf834702" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection32</seg>
+        </bo>
+        <bendpoints>
+          <point x="452.0" y="2698.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="98346cf4-63df-4379-8a3b-c3dedd5feab9" manual="true">
+        <element uuid="6c631f9c-88ba-494f-ae1e-2bba8cd6ba1a" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection33</seg>
+        </bo>
+        <bendpoints>
+          <point x="448.0" y="2846.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="34b16123-0721-464a-b976-00053ff4c44a" manual="true">
+        <element uuid="cdc0a076-b78e-48ba-9dbd-4c602e7a20c9" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection34</seg>
+        </bo>
+        <bendpoints>
+          <point x="434.0" y="3140.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="a4bda700-990d-4c85-88e5-18243fa03216" manual="true">
+        <element uuid="c69612ee-c506-45ff-aa05-4fed5ff7c81d" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection35</seg>
+        </bo>
+        <bendpoints>
+          <point x="462.0" y="2600.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="2ac7e392-4e45-4e86-b95f-c63a5c85facc" manual="true">
+        <element uuid="99ddce8e-b335-4d1c-ba29-ad00ed49f446" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection36</seg>
+        </bo>
+        <bendpoints>
+          <point x="436.0" y="2944.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="48b0c27c-b165-4571-98d0-d42a9414905c" manual="true">
+        <element uuid="02f01e6b-741f-4676-8096-271ead630b4c" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection37</seg>
+        </bo>
+        <bendpoints>
+          <point x="406.0" y="3188.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="c6461b1b-adba-4799-9a79-db7d6d1e03fa" manual="true">
+        <element uuid="bc501920-8e26-4ccf-a77c-ee76dcf953f4" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection38</seg>
+        </bo>
+        <bendpoints>
+          <point x="2304.0" y="352.0"/>
+          <point x="2304.0" y="1570.0"/>
+          <point x="2222.0" y="3316.0"/>
+          <point x="478.0" y="3316.0"/>
+          <point x="478.0" y="2748.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="ee27d957-30ac-496c-aa65-2b62dc464033" manual="true">
+        <element uuid="26d3f3ba-d072-4932-ae7e-f386e98c80b4" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection39</seg>
+        </bo>
+        <bendpoints>
+          <point x="2314.0" y="478.0"/>
+          <point x="2314.0" y="1624.0"/>
+          <point x="2228.0" y="3300.0"/>
+          <point x="476.0" y="3300.0"/>
+          <point x="476.0" y="3090.0"/>
+        </bendpoints>
+      </element>
       <element uuid="e213b361-c130-4818-b901-bc854a331da2" manual="true">
         <element uuid="dc45adc5-4300-40ec-a234-80e1ef6fc322" manual="true">
           <bo>
@@ -613,6 +775,123 @@
           <seg>connection</seg>
           <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection4</seg>
         </bo>
+      </element>
+      <element uuid="3a98bea2-5f6c-4eb1-a828-e5a436bf1d3e" manual="true">
+        <element uuid="7c3b9c8c-a82b-4a93-acb4-1ed283837ee4" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection40</seg>
+        </bo>
+        <bendpoints>
+          <point x="2318.0" y="608.0"/>
+          <point x="2318.0" y="1906.0"/>
+          <point x="2218.0" y="3298.0"/>
+          <point x="486.0" y="3298.0"/>
+          <point x="486.0" y="2992.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="0cf90a80-d204-4c44-b909-8c0fce4ac354" manual="true">
+        <element uuid="1f11c6ba-b154-44e1-b711-382bb7a50966" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection41</seg>
+        </bo>
+        <bendpoints>
+          <point x="2298.0" y="700.0"/>
+          <point x="2298.0" y="2046.0"/>
+          <point x="2214.0" y="3306.0"/>
+          <point x="484.0" y="3306.0"/>
+          <point x="484.0" y="3042.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="4a6f8e9f-b13d-4c82-9b74-fcdcbe5efeb9" manual="true">
+        <element uuid="83e4dfc4-ce81-40de-b6b7-24848527c683" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection42</seg>
+        </bo>
+        <bendpoints>
+          <point x="2308.0" y="1202.0"/>
+          <point x="2308.0" y="2130.0"/>
+          <point x="2220.0" y="3312.0"/>
+          <point x="478.0" y="3312.0"/>
+          <point x="478.0" y="2992.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="83e0694b-61e8-415e-b975-e4987dde464c" manual="true">
+        <element uuid="ed3a1947-1da7-49df-94c8-0ff18c36dc66" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection43</seg>
+        </bo>
+        <bendpoints>
+          <point x="2310.0" y="1292.0"/>
+          <point x="2310.0" y="1708.0"/>
+          <point x="2310.0" y="2128.0"/>
+          <point x="2230.0" y="3318.0"/>
+          <point x="474.0" y="3318.0"/>
+          <point x="474.0" y="3042.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="1ae17fc6-d359-49ec-8d89-16b2dd62e827" manual="true">
+        <element uuid="601635c6-e479-4fe5-a262-ed2a935c35fa" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection44</seg>
+        </bo>
+        <bendpoints>
+          <point x="2308.0" y="1388.0"/>
+          <point x="2308.0" y="2340.0"/>
+          <point x="2222.0" y="3324.0"/>
+          <point x="1410.0" y="3324.0"/>
+          <point x="466.0" y="3324.0"/>
+          <point x="466.0" y="3090.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="1abec4d2-1e7c-43e5-ad52-819a54e43597" manual="true">
+        <element uuid="f0de2e1d-7174-4d94-980c-63b6941c7f2b" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection45</seg>
+        </bo>
+        <bendpoints>
+          <point x="2310.0" y="1492.0"/>
+          <point x="2310.0" y="2310.0"/>
+          <point x="2226.0" y="3298.0"/>
+          <point x="1374.0" y="3298.0"/>
+          <point x="464.0" y="3298.0"/>
+          <point x="464.0" y="2796.0"/>
+        </bendpoints>
       </element>
       <element uuid="1aa789d6-7059-446a-a9af-3afbf346e0ab" manual="true">
         <element uuid="4b2438b2-fac3-439a-a5eb-62dbd40efb93" manual="true">
@@ -855,6 +1134,146 @@
         </bo>
         <position x="228.0" y="1968.0"/>
         <size width="1592.0" height="292.0"/>
+      </element>
+      <element uuid="09fdfd23-d837-48f4-827a-633571750244" manual="true">
+        <element uuid="22501006-e1e6-43b6-abc9-97c2f8a3ffc4" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>analogical_switch</seg>
+          </bo>
+          <position y="255.0"/>
+        </element>
+        <element uuid="bbe260a3-f45a-4694-ac47-46ab0d7caf17" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>circuit_pressurized</seg>
+          </bo>
+          <position y="598.0"/>
+        </element>
+        <element uuid="f417c3af-0879-473c-956a-87d9b248281a" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>close_ev</seg>
+          </bo>
+          <position y="451.0"/>
+        </element>
+        <element uuid="90b7f8b1-7a92-4733-a17a-cd34931ccc77" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>door_closed</seg>
+          </bo>
+          <position y="549.0"/>
+        </element>
+        <element uuid="f6422f3c-ac0e-49df-a189-6234eddd1e78" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>door_open</seg>
+          </bo>
+          <position y="353.0"/>
+        </element>
+        <element uuid="5c012366-6996-43cd-abca-742a9223360e" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>extend_ev</seg>
+          </bo>
+          <position y="157.0"/>
+        </element>
+        <element uuid="0e1dfff9-06f2-496b-9801-e90a43942741" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>gear_extended</seg>
+          </bo>
+          <position y="108.0"/>
+        </element>
+        <element uuid="e11c8c5c-bc16-4bd3-b8a7-458c81e13761" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>gear_retracted</seg>
+          </bo>
+          <position y="304.0"/>
+        </element>
+        <element uuid="de0e547d-ced2-4be9-aed6-37268a60d11b" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>general_ev</seg>
+          </bo>
+          <position y="500.0"/>
+        </element>
+        <element uuid="68008940-5492-43cc-abc4-c6099993170b" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>handle</seg>
+          </bo>
+          <position y="10.0"/>
+        </element>
+        <element uuid="9b654b34-8706-4052-bf25-5eb6373fd7e8" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>in_anomally</seg>
+          </bo>
+          <position x="1484.0" y="70.0"/>
+        </element>
+        <element uuid="a2a413f5-229d-4340-a494-a7eb482cf181" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>open_ev</seg>
+          </bo>
+          <position y="402.0"/>
+        </element>
+        <element uuid="5ee97062-a1f2-4dbd-8d3e-b53c6ad6d877" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>retract_ev</seg>
+          </bo>
+          <position y="206.0"/>
+        </element>
+        <element uuid="02064574-2a09-4f6c-bcc4-b84f4c9cecd2" manual="true" primaryLabelVisible="false">
+          <element uuid="735a44ea-cc24-40eb-861d-4a3ef3f4026e" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>analogical_switch</seg>
+            </bo>
+            <position y="54.0"/>
+          </element>
+          <element uuid="773b04b7-9946-42e7-8e9b-b5986c029478" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>handle</seg>
+            </bo>
+            <position y="10.0"/>
+          </element>
+          <element uuid="5fb366e3-f5ec-4194-a93a-efe81de9c829" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>in_anomaly</seg>
+            </bo>
+            <position x="730.0" y="3.0"/>
+          </element>
+          <element uuid="fdaa9ab9-2e15-4c83-8317-afb6acdb605d" manual="true" fontSize="8.0">
+            <bo>
+              <seg>tag</seg>
+              <seg>sc_type</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>subcomponent</seg>
+            <seg>checkanalogicalswitch_1_impl</seg>
+          </bo>
+          <position x="350.0" y="80.0"/>
+          <size width="820.0" height="95.0"/>
+        </element>
+        <element uuid="38c62a9e-cd50-48c5-ad18-3f8d020bd40e" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>sc_type</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_subcomponent2</seg>
+        </bo>
+        <position x="260.0" y="2370.0"/>
+        <size width="1578.0" height="721.0"/>
       </element>
       <element uuid="dcaff367-41ff-43d7-91a7-6e7995879ad8" manual="true">
         <element uuid="7160aa88-4e27-4adf-b5ba-80a538701b64" manual="true" dockArea="left">
@@ -1725,15 +2144,15 @@
         <seg>subcomponent</seg>
         <seg>computing_module_general_processus_impl</seg>
       </bo>
-      <position x="330.0" y="130.0"/>
-      <size width="2031.0" height="2412.0"/>
+      <position x="420.0" y="130.0"/>
+      <size width="2031.0" height="3272.0"/>
     </element>
     <bo>
       <seg>classifier</seg>
       <seg>computing_module.computing_module_impl</seg>
     </bo>
     <position x="-70.0" y="60.0"/>
-    <size width="2690.0" height="2542.0"/>
+    <size width="2690.0" height="3402.0"/>
   </element>
   <config type="structure" connectionPrimaryLabelsVisible="false">
     <enabledAadlProperties/>

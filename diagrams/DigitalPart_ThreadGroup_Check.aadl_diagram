@@ -27,8 +27,21 @@
         <seg>classifier</seg>
         <seg>digitalpart_thread_checkanalogicalswitch_1</seg>
       </bo>
-      <position x="698.0" y="708.0"/>
+      <position x="1180.0" y="670.0"/>
       <size width="421.0" height="119.0"/>
+    </element>
+    <element uuid="07f375f7-11bd-4747-9c8e-55c325e817d4" manual="true">
+      <element uuid="030fdf7a-6cdc-4f6b-a7f2-79e8ef8ec056" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkanalogicalswitch_1.digitalpart_thread_checkanalogicalswitch_1_impl</seg>
+      </bo>
+      <position x="150.0" y="720.0"/>
+      <size width="739.0" height="35.0"/>
     </element>
     <element uuid="0d0ade6b-fc72-4d9d-acf1-2921d2a452f7" manual="true">
       <element uuid="360f1282-2dc9-43f2-9c42-2ee80005a98e" manual="true" dockArea="left">
@@ -56,8 +69,21 @@
         <seg>classifier</seg>
         <seg>digitalpart_thread_checkanalogicalswitch_2</seg>
       </bo>
-      <position x="698.0" y="868.0"/>
+      <position x="1180.0" y="830.0"/>
       <size width="420.0" height="131.0"/>
+    </element>
+    <element uuid="0128c802-803c-43c6-9d36-533558ab13da" manual="true">
+      <element uuid="42fbc213-03aa-42df-a76e-6bf492d17967" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkanalogicalswitch_2.digitalpart_thread_checkanalogicalswitch_2_impl</seg>
+      </bo>
+      <position x="180.0" y="840.0"/>
+      <size width="739.0" height="35.0"/>
     </element>
     <element uuid="3296fd3e-c035-488f-b27d-59602c5f91d0" manual="true">
       <element uuid="4390dd93-8f43-4196-be3f-8d3428d4a456" manual="true" dockArea="left">
@@ -85,16 +111,511 @@
         <seg>classifier</seg>
         <seg>digitalpart_thread_checkcircuitpressurized_1</seg>
       </bo>
-      <position x="698.0" y="1028.0"/>
+      <position x="1180.0" y="990.0"/>
       <size width="429.0" height="151.0"/>
     </element>
+    <element uuid="7f03b922-a8dc-46e7-9d8a-8178a2bc5d56" manual="true">
+      <element uuid="360ad564-bf25-42d3-9fb5-2fb36adc5d2c" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkcircuitpressurized_1.digitalpart_thread_checkcircuitpressurized_1_impl</seg>
+      </bo>
+      <position x="210.0" y="1010.0"/>
+      <size width="720.0" height="35.0"/>
+    </element>
     <element uuid="8c271e4e-9445-40a0-a380-01cefef2b3e4" manual="true">
+      <element uuid="6551f308-c8d9-4952-819c-8c9f4049b455" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>circuit_pressurized</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="1d1e9f02-9bef-4aea-b091-9171df651da9" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>general_ev</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <element uuid="39e2a84c-fade-4f13-a7a6-ae678771beac" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position x="339.0" y="80.0"/>
+      </element>
       <bo>
         <seg>classifier</seg>
         <seg>digitalpart_thread_checkcircuitpressurized_2</seg>
       </bo>
-      <position x="688.0" y="1238.0"/>
-      <size width="401.0" height="151.0"/>
+      <position x="1170.0" y="1200.0"/>
+      <size width="429.0" height="151.0"/>
+    </element>
+    <element uuid="5cb6929a-23d1-4fc6-ac9b-0d4324f94967" manual="true">
+      <element uuid="2b346906-bff8-4781-a3ed-c0d8d614cee8" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkcircuitpressurized_2.digitalpart_thread_checkcircuitpressurized_2_impl</seg>
+      </bo>
+      <position x="172.0" y="1220.0"/>
+      <size width="720.0" height="35.0"/>
+    </element>
+    <element uuid="64ab984e-dc4e-4ae3-9c2c-fb2315941a61" manual="true">
+      <element uuid="cdb1d27d-a03a-46a5-9a06-234203aff9af" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_closed</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="4824851d-d027-4930-82cb-040327d97757" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position x="339.0" y="80.0"/>
+      </element>
+      <element uuid="0020afa1-2083-4ea8-ad86-58d9ce3cec1b" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>open_ev</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkdoors_1</seg>
+      </bo>
+      <position x="1170.0" y="1380.0"/>
+      <size width="429.0" height="151.0"/>
+    </element>
+    <element uuid="1619c7a7-4c7d-450a-8b53-f70a9a280049" manual="true">
+      <element uuid="9414ca27-b48c-494d-b322-5a030a43edb3" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkdoors_1.digitalpart_thread_checkdoors_1_impl</seg>
+      </bo>
+      <position x="314.0" y="1440.0"/>
+      <size width="575.0" height="35.0"/>
+    </element>
+    <element uuid="eac0a3e1-d470-41fe-b6f5-852f9a977b90" manual="true">
+      <element uuid="9bb08ae3-7754-4327-99a8-546878e84468" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_open</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="1bc7a136-b0db-4521-a8ca-d2185e676856" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position x="339.0" y="80.0"/>
+      </element>
+      <element uuid="44973525-c0cc-434f-bdd0-bd1c0804382e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>open_ev</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkdoors_2</seg>
+      </bo>
+      <position x="1160.0" y="1570.0"/>
+      <size width="429.0" height="151.0"/>
+    </element>
+    <element uuid="4a03b871-9986-491a-853f-88a9160c4098" manual="true">
+      <element uuid="be5f889e-4460-4b36-b8aa-fba06c773ff4" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkdoors_2.digitalpart_thread_checkdoors_2_impl</seg>
+      </bo>
+      <position x="360.0" y="1610.0"/>
+      <size width="575.0" height="35.0"/>
+    </element>
+    <element uuid="07bd3aa9-11cf-4ed2-b729-3ae27487d79a" manual="true">
+      <element uuid="4e950379-c7bd-4284-ab83-e8efb12a7b8c" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>close_ev</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <element uuid="553bee7d-6f3f-471c-8e50-ddf5ce9ef61e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_open</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="4d775087-3833-4498-a4ad-6e07f69bb2ff" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position x="339.0" y="80.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkdoors_3</seg>
+      </bo>
+      <position x="1160.0" y="1740.0"/>
+      <size width="429.0" height="151.0"/>
+    </element>
+    <element uuid="5da47f84-0805-4242-9e4c-6a23d081bc73" manual="true">
+      <element uuid="706bf4e3-7de3-4337-887c-6ef5f686c6a0" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkdoors_3.digitalpart_thread_checkdoors_3_impl</seg>
+      </bo>
+      <position x="430.0" y="1770.0"/>
+      <size width="575.0" height="35.0"/>
+    </element>
+    <element uuid="59b189e5-18ff-47e5-b71c-910d137d9051" manual="true">
+      <element uuid="74a790fb-6012-41be-922b-f41d39127502" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>close_ev</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <element uuid="dbe12a0a-a859-4126-bfd9-adcad8e4cf26" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_closed</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="250f831e-e299-4351-b260-daf555095b75" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position x="339.0" y="80.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkdoors_4</seg>
+      </bo>
+      <position x="1160.0" y="1920.0"/>
+      <size width="429.0" height="151.0"/>
+    </element>
+    <element uuid="aaa529f8-b520-4cdb-93a0-900d58762f88" manual="true">
+      <element uuid="020454be-4111-4625-b4bf-f40f9c5b704a" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkdoors_4.digitalpart_thread_checkdoors_4_impl</seg>
+      </bo>
+      <position x="450.0" y="1978.0"/>
+      <size width="575.0" height="35.0"/>
+    </element>
+    <element uuid="10f9a2bb-217b-433c-bf19-76f6898fda9f" manual="true">
+      <element uuid="1324cd1e-9688-4577-8298-7c7f755c1339" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>gear_extended</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="01d28b5a-cd5e-4559-9f90-7c49c478cbcd" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position x="339.0" y="80.0"/>
+      </element>
+      <element uuid="be1cd07d-b865-42bd-8da4-7129c95556a6" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>retract_ev</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkgears_1</seg>
+      </bo>
+      <position x="1160.0" y="2140.0"/>
+      <size width="429.0" height="151.0"/>
+    </element>
+    <element uuid="c4ac162c-fd34-48f9-96e8-21d9317c6cba" manual="true">
+      <element uuid="083991b9-1e84-41d2-9e15-9e7e513e415f" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkgears_1.digitalpart_thread_checkgears_1_impl</seg>
+      </bo>
+      <position x="460.0" y="2210.0"/>
+      <size width="573.0" height="35.0"/>
+    </element>
+    <element uuid="bd280d1c-683a-4864-a113-4b7e1d514a54" manual="true">
+      <element uuid="3f37dfb1-f7bf-45c5-8bea-9b5df93c214e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>gear_retracted</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="bfc80bfd-217b-47f8-9df1-466f4ef58040" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position x="339.0" y="80.0"/>
+      </element>
+      <element uuid="57a6129a-5ea6-46c3-a6db-b292d4aaf7b8" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>retract_ev</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkgears_2</seg>
+      </bo>
+      <position x="1150.0" y="2320.0"/>
+      <size width="429.0" height="151.0"/>
+    </element>
+    <element uuid="939e29e5-c978-4dda-a45a-914f64f12c61" manual="true">
+      <element uuid="9f826e57-38f9-41e5-a782-d1bcfe65a455" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkgears_2.digitalpart_thread_checkgears_2_impl</seg>
+      </bo>
+      <position x="490.0" y="2378.0"/>
+      <size width="573.0" height="35.0"/>
+    </element>
+    <element uuid="eaa77aaa-9350-4fd7-871b-e9b9c69d3979" manual="true">
+      <element uuid="ce0a3504-5b56-49fa-a9a2-980c6fc9b97d" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>extend_ev</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <element uuid="e23cd55f-9553-40f1-a18e-0c521fb00618" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>gear_retracted</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="c47ea1c5-a732-4b80-b03e-6f85c8e5e11d" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position x="339.0" y="80.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkgears_3</seg>
+      </bo>
+      <position x="1130.0" y="2530.0"/>
+      <size width="429.0" height="151.0"/>
+    </element>
+    <element uuid="08886430-4ded-4a7f-803e-6327842e40c4" manual="true">
+      <element uuid="c9930e1e-d187-4720-a134-9fa61f747c12" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkgears_3.digitalpart_thread_checkgears_3_impl</seg>
+      </bo>
+      <position x="528.0" y="2588.0"/>
+      <size width="573.0" height="35.0"/>
+    </element>
+    <element uuid="00f3d8e6-1d87-43ef-b6a3-798e4b93838b" manual="true">
+      <element uuid="660454b9-7758-48e2-bad8-ebb1a89f8b36" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>extend_ev</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <element uuid="09d74026-42a7-454a-b500-785eacb72f41" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>gear_extended</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="ce0afebb-2fba-4aa9-9755-688c028d009d" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position x="339.0" y="80.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkgears_4</seg>
+      </bo>
+      <position x="1100.0" y="2700.0"/>
+      <size width="429.0" height="151.0"/>
+    </element>
+    <element uuid="395f0480-2f75-4a2a-a45d-2ac8e72ac16f" manual="true">
+      <element uuid="1749c6cd-20ae-4256-8755-86d76e63b099" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkgears_4.digitalpart_thread_checkgears_4_impl</seg>
+      </bo>
+      <position x="451.0" y="2750.0"/>
+      <size width="573.0" height="35.0"/>
+    </element>
+    <element uuid="525b78c2-f791-4c32-983f-1ebf8cffc2e6" manual="true">
+      <element uuid="4b866d26-6177-42b6-a072-94f9e2612871" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position x="339.0" y="80.0"/>
+      </element>
+      <element uuid="22f65ede-f468-462a-b973-c12da1b31f45" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly_checkanalogicalswitch_1</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="9ff27e65-860b-4529-b002-3bb7497b9476" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly_checkanalogicalswitch_2</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <element uuid="896793ea-1d5a-42d9-80cb-6a38f33266b1" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly_checkcircuitpressurized_1</seg>
+        </bo>
+        <position y="154.0"/>
+      </element>
+      <element uuid="269d600d-1987-4f25-b97d-2b4b4a01ba63" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly_checkcircuitpressurized_2</seg>
+        </bo>
+        <position y="198.0"/>
+      </element>
+      <element uuid="791a5d41-a920-4f4e-ae83-dc2c882c2a79" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly_checkdoors_1</seg>
+        </bo>
+        <position y="242.0"/>
+      </element>
+      <element uuid="3afbbc30-88f8-4f9a-96ac-6b83d897dc26" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly_checkdoors_2</seg>
+        </bo>
+        <position y="286.0"/>
+      </element>
+      <element uuid="931ccc21-38a5-4aad-b527-fcb076ac5417" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly_checkdoors_3</seg>
+        </bo>
+        <position y="330.0"/>
+      </element>
+      <element uuid="9320084b-2fe9-4ec8-bdeb-1a36977293c7" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly_checkdoors_4</seg>
+        </bo>
+        <position y="374.0"/>
+      </element>
+      <element uuid="44483f08-765d-4d15-a7a2-c5c6a5c81798" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly_checkgears_1</seg>
+        </bo>
+        <position y="418.0"/>
+      </element>
+      <element uuid="3986364a-1629-4ae8-b74f-7807e41cf887" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly_checkgears_2</seg>
+        </bo>
+        <position y="462.0"/>
+      </element>
+      <element uuid="d53a2d49-ef68-4299-b476-9ba34ee084d9" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly_checkgears_3</seg>
+        </bo>
+        <position y="506.0"/>
+      </element>
+      <element uuid="362157be-f09e-49c0-8f74-9965a470e2e7" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly_checkgears_4</seg>
+        </bo>
+        <position y="550.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkresponse</seg>
+      </bo>
+      <position x="1080.0" y="2960.0"/>
+      <size width="429.0" height="589.0"/>
+    </element>
+    <element uuid="2c364593-ac35-4aa0-a451-e363946e2032" manual="true">
+      <element uuid="216696e3-88ec-43cc-bc91-2c3b7403bf13" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkresponse.digitalpart_thread_checkresponse</seg>
+      </bo>
+      <position x="410.0" y="3140.0"/>
+      <size width="557.0" height="35.0"/>
     </element>
     <element uuid="dfe9351f-6a9e-4a8b-9aa2-cd094b9c1471" manual="true">
       <element uuid="ff2eec53-53d2-4a8d-be67-7522a0249cf3" manual="true" dockArea="left">
@@ -192,7 +713,7 @@
         <seg>classifier</seg>
         <seg>digitalpart_threadgroup_check</seg>
       </bo>
-      <position x="748.0" y="28.0"/>
+      <position x="1229.0"/>
       <size width="321.0" height="629.0"/>
     </element>
     <element uuid="e7c1a0ba-87ef-44d7-8409-1ee214fd896e" manual="true">
@@ -212,8 +733,8 @@
       <seg>package</seg>
       <seg>digitalpart_threadgroup_check</seg>
     </bo>
-    <position x="12.0" y="12.0"/>
-    <size width="1241.0" height="1649.0"/>
+    <position x="440.0"/>
+    <size width="2206.0" height="3549.0"/>
   </element>
   <config type="package" connectionPrimaryLabelsVisible="false">
     <enabledAadlProperties/>
