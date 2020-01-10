@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="bfe72457-7efa-4838-9299-33727971d573" manual="true">
+    <element uuid="ee795698-6dd4-46e7-9e7c-b8b439956c65" manual="true">
+      <element uuid="ac6e5c6b-23a5-400f-a75c-c31d28931ef0" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>anomaly</seg>
+        </bo>
+        <position x="562.0" y="65.0"/>
+      </element>
+      <element uuid="88799514-c787-4af2-a07e-e29bfabe612a" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_closed</seg>
+        </bo>
+        <position y="160.0"/>
+      </element>
+      <element uuid="932e1513-4fac-4e64-a6ea-20c253e52337" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_open</seg>
+        </bo>
+        <position y="72.0"/>
+      </element>
+      <element uuid="b5c78d17-f531-425c-aca8-4c05d5a6b603" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>gears_extended</seg>
+        </bo>
+        <position y="116.0"/>
+      </element>
+      <element uuid="a37ee0dd-f789-40c7-9b1b-7382eaf5e578" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>gears_locked_down</seg>
+        </bo>
+        <position x="490.0" y="110.0"/>
+      </element>
+      <element uuid="0ffa8f8e-8314-43ba-a419-7e3a38c27473" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>gears_manoeuvering</seg>
+        </bo>
+        <position x="482.0" y="20.0"/>
+      </element>
+      <element uuid="aa204f46-bbf3-48b6-8b62-f72e6f1f3ffd" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position y="28.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_lights_thread</seg>
+      </bo>
+      <position x="660.0" y="100.0"/>
+      <size width="635.0" height="199.0"/>
+    </element>
+    <element uuid="719668ec-5219-4878-8d13-a6bbe2bb0ab5" manual="true">
+      <element uuid="1c54cb44-9c71-457a-9c74-6e2ab66fc9c7" manual="true" dockArea="right" primaryLabelVisible="false">
+        <bo>
+          <seg>feature</seg>
+          <seg>gears_extended</seg>
+        </bo>
+        <position x="515.0" y="4.0"/>
+      </element>
+      <element uuid="cd9ce107-00e7-4807-a962-35980b11cb72" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_lights_thread.digitalpart_lights_thread_impl</seg>
+      </bo>
+      <position x="30.0" y="140.0"/>
+      <size width="535.0" height="43.0"/>
+    </element>
+    <bo>
+      <seg>package</seg>
+      <seg>digitalpart_lights_thread</seg>
+    </bo>
+    <position x="-70.0" y="60.0"/>
+    <size width="1295.0" height="319.0"/>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>digitalpart_lights_thread</seg>
+    </context>
+  </config>
+</diagram:Diagram>

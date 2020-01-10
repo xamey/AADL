@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="0a58e0a4-97e0-461a-9ee0-703dcc32886f" manual="true">
+    <element uuid="6784ebb0-8796-4c49-83a0-97387ec99028" manual="true">
+      <element uuid="74411073-818c-4361-b12f-fc84e316d49c" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>analogical_switch</seg>
+        </bo>
+        <position y="30.0"/>
+      </element>
+      <element uuid="56b0b7fa-21d2-445f-b363-f24b3db866dc" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>handle</seg>
+        </bo>
+        <position y="80.0"/>
+      </element>
+      <element uuid="7c5b29fb-29da-411b-8d84-898dd4cb131c" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position x="331.0" y="60.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkanalogicalswitch_1</seg>
+      </bo>
+      <position x="698.0" y="708.0"/>
+      <size width="421.0" height="119.0"/>
+    </element>
+    <element uuid="0d0ade6b-fc72-4d9d-acf1-2921d2a452f7" manual="true">
+      <element uuid="360f1282-2dc9-43f2-9c42-2ee80005a98e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>analogical_switch</seg>
+        </bo>
+        <position y="40.0"/>
+      </element>
+      <element uuid="a69a8b91-c8ef-44cd-ac56-0c9c04a0286e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>handle</seg>
+        </bo>
+        <position y="84.0"/>
+      </element>
+      <element uuid="b19e00ee-fc19-4105-8900-53e224406848" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position x="330.0" y="70.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkanalogicalswitch_2</seg>
+      </bo>
+      <position x="698.0" y="868.0"/>
+      <size width="420.0" height="131.0"/>
+    </element>
+    <element uuid="3296fd3e-c035-488f-b27d-59602c5f91d0" manual="true">
+      <element uuid="4390dd93-8f43-4196-be3f-8d3428d4a456" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>circuit_pressurized</seg>
+        </bo>
+        <position y="50.0"/>
+      </element>
+      <element uuid="65f422b8-b0ae-4156-9a41-1b9815069491" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>general_ev</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <element uuid="572ddaec-2281-4926-be52-1a695644f0d0" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomaly</seg>
+        </bo>
+        <position x="339.0" y="80.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkcircuitpressurized_1</seg>
+      </bo>
+      <position x="698.0" y="1028.0"/>
+      <size width="429.0" height="151.0"/>
+    </element>
+    <element uuid="8c271e4e-9445-40a0-a380-01cefef2b3e4" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_thread_checkcircuitpressurized_2</seg>
+      </bo>
+      <position x="688.0" y="1238.0"/>
+      <size width="401.0" height="151.0"/>
+    </element>
+    <element uuid="dfe9351f-6a9e-4a8b-9aa2-cd094b9c1471" manual="true">
+      <element uuid="ff2eec53-53d2-4a8d-be67-7522a0249cf3" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>analogical_switch</seg>
+        </bo>
+        <position y="28.0"/>
+      </element>
+      <element uuid="e9391c83-edaf-4717-88ec-fc8b8fd9e4ba" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>circuit_pressurized</seg>
+        </bo>
+        <position y="118.0"/>
+      </element>
+      <element uuid="37576636-ae43-457c-8b2d-ece9cbb88e6b" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>close_ev</seg>
+        </bo>
+        <position y="390.0"/>
+      </element>
+      <element uuid="d92c69ca-4fd9-4f52-a6b1-a145a8794ffa" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_closed</seg>
+        </bo>
+        <position y="220.0"/>
+      </element>
+      <element uuid="2df31d4b-6e5a-417b-bd41-f4fb68fa9207" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_open</seg>
+        </bo>
+        <position y="338.0"/>
+      </element>
+      <element uuid="0bb03939-6a23-45e3-a852-777cd72da281" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>extend_ev</seg>
+        </bo>
+        <position y="590.0"/>
+      </element>
+      <element uuid="7bc3fdf5-bce8-4dab-bb44-8f1ad9bf960d" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>gear_extended</seg>
+        </bo>
+        <position y="440.0"/>
+      </element>
+      <element uuid="c87be52b-d4b3-47ec-99a6-dc6f81bc2ff4" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>gear_retracted</seg>
+        </bo>
+        <position y="540.0"/>
+      </element>
+      <element uuid="09c894c4-2a2b-46a0-934b-7d2dd7bf952a" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>general_ev</seg>
+        </bo>
+        <position y="170.0"/>
+      </element>
+      <element uuid="1e7d6e9f-26db-4380-b92d-b94cb6923d7e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>handle</seg>
+        </bo>
+        <position y="72.0"/>
+      </element>
+      <element uuid="3cd00855-f8e8-4a33-bff3-8011dc1b82ae" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>in_anomally</seg>
+        </bo>
+        <position x="227.0" y="270.0"/>
+      </element>
+      <element uuid="44d883d4-6a2c-4d18-a64e-2b85152ae572" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>open_ev</seg>
+        </bo>
+        <position y="280.0"/>
+      </element>
+      <element uuid="4df5328a-e205-4c70-b83f-ec9c330a1430" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>retract_ev</seg>
+        </bo>
+        <position y="490.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_threadgroup_check</seg>
+      </bo>
+      <position x="748.0" y="28.0"/>
+      <size width="321.0" height="629.0"/>
+    </element>
+    <element uuid="e7c1a0ba-87ef-44d7-8409-1ee214fd896e" manual="true">
+      <element uuid="77d11b1b-7414-499c-abfa-2c50b027d160" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>digitalpart_threadgroup_check.digitalpart_threadgroup_check_impl</seg>
+      </bo>
+      <position x="58.0" y="288.0"/>
+      <size width="547.0" height="35.0"/>
+    </element>
+    <bo>
+      <seg>package</seg>
+      <seg>digitalpart_threadgroup_check</seg>
+    </bo>
+    <position x="12.0" y="12.0"/>
+    <size width="1241.0" height="1649.0"/>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>digitalpart_threadgroup_check</seg>
+    </context>
+  </config>
+</diagram:Diagram>

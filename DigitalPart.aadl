@@ -1,0 +1,139 @@
+package DigitalPart
+public
+	with Base_Types;
+	with Data_Model;
+	with DigitalPart_ThreadGroup_ExtendGears;
+	with DigitalPart_ThreadGroup_RetractGears;
+	with DigitalPart_Lights_Thread;
+
+	bus DataBusIntern
+	end DataBusIntern;
+
+	data handle_status
+		properties
+			Data_Model::Data_Representation => Enum;
+			Data_Model::Enumerators => ("up", "down");
+	end handle_status;
+
+	data switch_status
+		properties
+			Data_Model::Data_Representation => Enum;
+			Data_Model::Enumerators => ("open", "close");
+	end switch_status;
+
+	data position_status
+		properties
+			Data_Model::Data_Representation => Enum;
+			Data_Model::Enumerators => ("sol", "vol");
+	end position_status;
+
+	system Computing_Module
+		features
+			DataBusIntern: requires bus access DataBusIntern;
+			Handle: in data port handle_status;
+			Analogical_switch: in data port switch_status;
+			Gear_extended: in data port Base_Types::Boolean;
+			Gear_retracted: in data port Base_Types::Boolean;
+			Gear_shock_absorber: in data port position_status;
+			Door_closed: in data port Base_Types::Boolean;
+			Door_open: in data port Base_Types::Boolean;
+			Circuit_pressurized: in data port Base_Types::Boolean;
+			Gears_locked_down: out data port Base_Types::Boolean;
+			Gears_manoeuvring: out data port Base_Types::Boolean;
+			Anomaly: out data port Base_Types::Boolean;
+			Extend_EV: out data port Base_Types::Boolean;
+			Close_EV: out data port Base_Types::Boolean;
+			Open_EV: out data port Base_Types::Boolean;
+			Retract_EV: out data port Base_Types::Boolean;
+			General_EV: out data port Base_Types::Boolean;
+	end Computing_Module;
+
+	system implementation Computing_Module.Computing_Module_impl
+		subcomponents
+			Computing_Module_General_Processor_impl: processor Computing_Module_Processor.Computing_Module_Processor_impl;
+			Computing_Module_General_Processus_impl: process Computing_Module_General_Process.Computing_Module_General_Processus_impl;
+		connections
+			Computing_Module_Computing_Module_impl_new_connection: feature Computing_Module_General_Processus_impl.Gears_locked_down -> Gears_locked_down;
+			Computing_Module_Computing_Module_impl_new_connection2: feature Computing_Module_General_Processus_impl.Anomaly -> Anomaly;
+			Computing_Module_Computing_Module_impl_new_connection3: feature Computing_Module_General_Processus_impl.Gears_manoeuvring -> Gears_manoeuvring;
+			Computing_Module_Computing_Module_impl_new_connection4: feature Computing_Module_General_Processus_impl.Retract_EV -> Retract_EV;
+			Computing_Module_Computing_Module_impl_new_connection5: feature Computing_Module_General_Processus_impl.General_EV -> General_EV;
+			Computing_Module_Computing_Module_impl_new_connection6: feature Computing_Module_General_Processus_impl.Close_EV -> Close_EV;
+			Computing_Module_Computing_Module_impl_new_connection7: feature Computing_Module_General_Processus_impl.Open_EV -> Open_EV;
+			Computing_Module_Computing_Module_impl_new_connection8: feature Computing_Module_General_Processus_impl.Extend_EV -> Extend_EV;
+			Computing_Module_Computing_Module_impl_new_connection9: feature Gear_shock_absorber -> Computing_Module_General_Processus_impl.Gear_shock_absorber;
+			Computing_Module_Computing_Module_impl_new_connection10: feature Gear_extended -> Computing_Module_General_Processus_impl.Gear_extended;
+			Computing_Module_Computing_Module_impl_new_connection11: feature Analogical_switch -> Computing_Module_General_Processus_impl.Analogical_switch;
+			Computing_Module_Computing_Module_impl_new_connection12: feature Door_closed -> Computing_Module_General_Processus_impl.Door_closed;
+			Computing_Module_Computing_Module_impl_new_connection13: feature Handle -> Computing_Module_General_Processus_impl.Handle;
+			Computing_Module_Computing_Module_impl_new_connection14: feature Door_open -> Computing_Module_General_Processus_impl.Door_open;
+			Computing_Module_Computing_Module_impl_new_connection15: feature Circuit_pressurized -> Computing_Module_General_Processus_impl.Circuit_pressurized;
+			Computing_Module_Computing_Module_impl_new_connection16: feature Gear_retracted -> Computing_Module_General_Processus_impl.Gear_retracted;
+	end Computing_Module.Computing_Module_impl;
+
+	bus implementation DataBusIntern.DataBusIntern_impl
+	end DataBusIntern.DataBusIntern_impl;
+
+	process Computing_Module_General_Process
+		features
+			Handle: in data port handle_status;
+			Gear_extended: in data port Base_Types::Boolean;
+			Analogical_switch: in data port switch_status;
+			Gear_retracted: in data port Base_Types::Boolean;
+			Gear_shock_absorber: in data port position_status;
+			Door_closed: in data port Base_Types::Boolean;
+			Door_open: in data port Base_Types::Boolean;
+			Circuit_pressurized: in data port Base_Types::Boolean;
+			Gears_locked_down: out data port Base_Types::Boolean;
+			Gears_manoeuvring: out data port Base_Types::Boolean;
+			Anomaly: out data port Base_Types::Boolean;
+			Extend_EV: out data port Base_Types::Boolean;
+			Retract_EV: out data port Base_Types::Boolean;
+			Open_EV: out data port Base_Types::Boolean;
+			Close_EV: out data port Base_Types::Boolean;
+			General_EV: out data port Base_Types::Boolean;
+	end Computing_Module_General_Process;
+
+	process implementation Computing_Module_General_Process.Computing_Module_General_Processus_impl
+		subcomponents
+			Extend_Gears_ThreadGroup_impl: thread group DigitalPart_ThreadGroup_ExtendGears::Extend_Gears_ThreadGroup.Extend_Gears_ThreadGroup_impl;
+			Retract_Gears_Threadgroup_impl: thread group DigitalPart_ThreadGroup_RetractGears::Retract_Gears_Threadgroup.Retract_Gears_Threadgroup_impl;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_subcomponent: thread DigitalPart_Lights_Thread::DigitalPart_Lights_Thread.DigitalPart_Lights_Thread_impl;
+		connections
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection: feature Retract_Gears_Threadgroup_impl.Retract_EV -> Retract_EV;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection2: feature Retract_Gears_Threadgroup_impl.General_EV -> General_EV;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection3: feature Retract_Gears_Threadgroup_impl.General_EV -> General_EV;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection4: feature Retract_Gears_Threadgroup_impl.Close_EV -> Close_EV;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection5: feature Retract_Gears_Threadgroup_impl.Open_EV -> Open_EV;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection6: feature Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_subcomponent.Gears_locked_down -> Gears_locked_down;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection7: feature Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_subcomponent.Anomaly -> Anomaly;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection8: feature Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_subcomponent.Gears_manoeuvering -> Gears_manoeuvring;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection9: feature Extend_Gears_ThreadGroup_impl.Extend_EV -> Extend_EV;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection10: feature Extend_Gears_ThreadGroup_impl.General_EV -> General_EV;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection11: feature Extend_Gears_ThreadGroup_impl.Open_EV -> Open_EV;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection12: feature Extend_Gears_ThreadGroup_impl.Close_EV -> Close_EV;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection13: feature Gear_extended -> Extend_Gears_ThreadGroup_impl.Gears_extended;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection14: feature Analogical_switch -> Extend_Gears_ThreadGroup_impl.Analogic_switch;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection15: feature Analogical_switch -> Retract_Gears_Threadgroup_impl.Analogic_switch;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection16: feature Door_closed -> Extend_Gears_ThreadGroup_impl.Door_closed;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection17: feature Door_closed -> Retract_Gears_Threadgroup_impl.Door_closed;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection18: feature Handle -> Extend_Gears_ThreadGroup_impl.Handle;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection19: feature Handle -> Retract_Gears_Threadgroup_impl.Handle;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection20: feature Door_open -> Extend_Gears_ThreadGroup_impl.Door_open;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection21: feature Door_open -> Retract_Gears_Threadgroup_impl.Door_open;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection22: feature Circuit_pressurized -> Retract_Gears_Threadgroup_impl.Circuit_pressurized;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection23: feature Circuit_pressurized -> Extend_Gears_ThreadGroup_impl.Circuit_pressurized;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection24: feature Gear_retracted -> Retract_Gears_Threadgroup_impl.Gears_Retracted;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection25: feature Gear_shock_absorber -> Retract_Gears_Threadgroup_impl.Gear_shock_absorber;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection26: feature Gear_retracted -> Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_subcomponent.Gears_retracted;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection27: feature Gear_extended -> Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_subcomponent.Gears_extended;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection28: feature Door_open -> Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_subcomponent.Door_open;
+			Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_connection29: feature Door_closed -> Computing_Module_General_Process_Computing_Module_General_Processus_impl_new_subcomponent.Door_closed;
+	end Computing_Module_General_Process.Computing_Module_General_Processus_impl;
+
+	processor Computing_Module_Processor
+	end Computing_Module_Processor;
+
+	processor implementation Computing_Module_Processor.Computing_Module_Processor_impl
+	end Computing_Module_Processor.Computing_Module_Processor_impl;
+end DigitalPart;

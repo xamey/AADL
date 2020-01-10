@@ -1,0 +1,167 @@
+package DigitalPart_ThreadGroup_RetractGears
+public
+	with Base_Types;
+	with Data_Model;
+
+	data handle_status
+		properties
+			Data_Model::Data_Representation => Enum;
+			Data_Model::Enumerators => ("up", "down");
+	end handle_status;
+
+	data switch_status
+		properties
+			Data_Model::Data_Representation => Enum;
+			Data_Model::Enumerators => ("open", "close");
+	end switch_status;
+
+	data position_status
+		properties
+			Data_Model::Data_Representation => Enum;
+			Data_Model::Enumerators => ("sol", "vol");
+	end position_status;
+	
+	thread StimulateGen_EV_Open_EV
+		features
+			Handle: in data port handle_status;
+			General_EV: out data port Base_Types::Boolean;
+			Open_EV: out data port Base_Types::Boolean;
+			Circuit_pressurized: in data port Base_Types::Boolean;
+			Analogic_switch: in data port switch_status;
+			Gear_shock_absorber: in data port position_status;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
+	end StimulateGen_EV_Open_EV;
+
+	thread Stimulate_Retract_EV
+		features
+			Handle: in data port handle_status;
+			Door_open: in data port Base_Types::Boolean;
+			Retract_EV: out data port Base_Types::Boolean;
+			Gears_retracted: in data port Base_Types::Boolean;
+			Gear_shock_absorber: in data port position_status;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
+	end Stimulate_Retract_EV;
+
+	thread Stop_Retract_EV_Open_EV_Stimulate_Close_EV
+		features
+			Handle: in data port handle_status;
+			Gears_retracted: in data port Base_Types::Boolean;
+			Retract_EV: out data port Base_Types::Boolean;
+			Open_EV: out data port Base_Types::Boolean;
+			Close_EV: out data port Base_Types::Boolean;
+			Door_open: in data port Base_Types::Boolean;
+			Gear_shock_absorber: in data port position_status;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
+	end Stop_Retract_EV_Open_EV_Stimulate_Close_EV;
+
+	thread Stop_Close_EV_Gen_EV
+		features
+			Handle: in data port handle_status;
+			Door_closed: in data port Base_Types::Boolean;
+			Close_EV: out data port Base_Types::Boolean;
+			General_EV: out data port Base_Types::Boolean;
+			Circuit_pressurized: in data port Base_Types::Boolean;
+			Gear_shock_absorber: in data port position_status;
+		properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
+	end Stop_Close_EV_Gen_EV;
+
+	thread implementation Stimulate_Retract_EV.Stimulate_Retract_EV_impl
+		annex behavior_specification {**
+			states
+				s0 : initial complete state;
+			transitions
+				s0 -[on dispatch]-> s0 {
+					if (Handle = "up" and Gear_shock_absorber="vol" and Gears_retracted = false and Door_open = true)
+						Retract_EV := true
+					end if
+				};
+        **};
+	end Stimulate_Retract_EV.Stimulate_Retract_EV_impl;
+
+	thread implementation Stop_Retract_EV_Open_EV_Stimulate_Close_EV.Stop_Retract_EV_Open_EV_Stimulate_Close_EV_impl
+		annex behavior_specification {**
+          states
+            s0 : initial complete state;
+          transitions
+            s0 -[on dispatch]-> s0 {
+              if (Handle = "up" and Gear_shock_absorber = "vol" and Gears_retracted = true and Door_open = true)
+                Retract_EV := false;
+                Open_EV := false;
+                Close_EV := true
+              end if
+            };
+        **};
+	end Stop_Retract_EV_Open_EV_Stimulate_Close_EV.Stop_Retract_EV_Open_EV_Stimulate_Close_EV_impl;
+
+	thread implementation Stop_Close_EV_Gen_EV.Stop_Close_EV_Gen_EV_impl
+		annex behavior_specification {**
+          states
+            s0 : initial complete state;
+          transitions
+            s0 -[on dispatch]-> s0 {
+              if (Handle = "up" and Gear_shock_absorber = "vol" and Door_closed = false and Circuit_pressurized = true)
+                Close_EV := true
+              end if
+            };
+        **};
+	end Stop_Close_EV_Gen_EV.Stop_Close_EV_Gen_EV_impl;
+
+	thread implementation StimulateGen_EV_Open_EV.StimulateGen_EV_Open_EV_impl
+		annex behavior_specification {**
+          states
+            s0 : initial complete state;
+          transitions
+            s0 -[on dispatch]-> s0 {
+              if (Handle = "up" and Gear_shock_absorber = "vol" and Circuit_pressurized = false and Analogic_switch = "close")
+                General_EV := true
+              end if
+            };
+        **};
+	end StimulateGen_EV_Open_EV.StimulateGen_EV_Open_EV_impl;
+
+	thread group Retract_Gears_Threadgroup
+		features
+			Handle: in data port handle_status;
+			Door_open: in data port Base_Types::Boolean;
+			Gears_Retracted: in data port Base_Types::Boolean;
+			Door_closed: in data port Base_Types::Boolean;
+			Circuit_pressurized: in data port Base_Types::Boolean;
+			Analogic_switch: in data port switch_status;
+			Open_EV: out data port Base_Types::Boolean;
+			General_EV: out data port Base_Types::Boolean;
+			Retract_EV: out data port Base_Types::Boolean;
+			Close_EV: out data port Base_Types::Boolean;
+			Gear_shock_absorber: in data port position_status;
+	end Retract_Gears_Threadgroup;
+
+	thread group implementation Retract_Gears_Threadgroup.Retract_Gears_Threadgroup_impl
+		subcomponents
+			StimulateGen_EV_Open_EV_impl: thread StimulateGen_EV_Open_EV.StimulateGen_EV_Open_EV_impl;
+			Stimulate_Retract_EV_impl: thread Stimulate_Retract_EV.Stimulate_Retract_EV_impl;
+			Stop_Retract_EV_Open_EV_Stimulate_Close_EV_impl: thread Stop_Retract_EV_Open_EV_Stimulate_Close_EV.Stop_Retract_EV_Open_EV_Stimulate_Close_EV_impl;
+			Stop_Close_EV_Gen_EV_impl: thread Stop_Close_EV_Gen_EV.Stop_Close_EV_Gen_EV_impl;
+		connections
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection: port StimulateGen_EV_Open_EV_impl.Open_EV -> Open_EV;
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection2: port StimulateGen_EV_Open_EV_impl.General_EV -> General_EV;
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection3: port Stimulate_Retract_EV_impl.Retract_EV -> Retract_EV;
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection4: port Stop_Retract_EV_Open_EV_Stimulate_Close_EV_impl.Retract_EV -> Retract_EV;
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection5: port Stop_Retract_EV_Open_EV_Stimulate_Close_EV_impl.Open_EV -> Open_EV;
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection6: port Stop_Retract_EV_Open_EV_Stimulate_Close_EV_impl.Close_EV -> Close_EV;
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection7: port Stop_Close_EV_Gen_EV_impl.General_EV -> General_EV;
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection8: port Stop_Close_EV_Gen_EV_impl.Close_EV -> Close_EV;
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection9: port Circuit_pressurized -> Stop_Close_EV_Gen_EV_impl.Circuit_pressurized;
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection10: port Circuit_pressurized -> StimulateGen_EV_Open_EV_impl.Circuit_pressurized;
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection11: port Door_closed -> Stop_Close_EV_Gen_EV_impl.Door_closed;
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection12: port Door_open -> Stimulate_Retract_EV_impl.Door_open;
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection13: port Door_open -> Stop_Retract_EV_Open_EV_Stimulate_Close_EV_impl.Door_open;
+			Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection14: port Gears_Retracted -> Stimulate_Retract_EV_impl.Gears_retracted;
+	Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection15 : feature Handle -> StimulateGen_EV_Open_EV_impl . Handle ; Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection16 : feature Handle -> Stimulate_Retract_EV_impl . Handle ; Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection17 : feature Handle -> Stop_Retract_EV_Open_EV_Stimulate_Close_EV_impl . Handle ; Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection18 : feature Handle -> Stop_Close_EV_Gen_EV_impl . Handle ; Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection19 : feature Analogic_switch -> StimulateGen_EV_Open_EV_impl . Analogic_switch ; Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection20 : feature Gears_Retracted -> Stop_Retract_EV_Open_EV_Stimulate_Close_EV_impl . Gears_retracted ; Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection21 : feature Gear_shock_absorber -> Stop_Close_EV_Gen_EV_impl . Gear_shock_absorber ; Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection22 : feature Gear_shock_absorber -> Stop_Retract_EV_Open_EV_Stimulate_Close_EV_impl . Gear_shock_absorber ; Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection23 : feature Gear_shock_absorber -> Stimulate_Retract_EV_impl . Gear_shock_absorber ; Retract_Gears_Threadgroup_Retract_Gears_Threadgroup_impl_new_connection24 : feature Gear_shock_absorber -> StimulateGen_EV_Open_EV_impl . Gear_shock_absorber ; end Retract_Gears_Threadgroup.Retract_Gears_Threadgroup_impl ;
+end DigitalPart_ThreadGroup_RetractGears;

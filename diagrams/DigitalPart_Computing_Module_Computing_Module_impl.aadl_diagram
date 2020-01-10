@@ -1,0 +1,1745 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="aa10321f-c32c-41ef-8491-3638e3060ce4" manual="true">
+    <element uuid="fffa9a94-4ca5-42b1-9249-2858f4bf5e5c" manual="true">
+      <element uuid="27b3cea3-6e78-4fa7-993c-2a82e0dbbdad" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection</seg>
+      </bo>
+    </element>
+    <element uuid="6f3cbb6f-eef5-465e-b49f-1121d5306967" manual="true">
+      <element uuid="995e688f-5b9d-4e90-84f9-1db0f66a498f" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection10</seg>
+      </bo>
+    </element>
+    <element uuid="deef71f0-8e70-4d1f-a9a2-065e801f0499" manual="true">
+      <element uuid="a7b624b4-15e1-48f3-bafa-244801dc61fa" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection11</seg>
+      </bo>
+    </element>
+    <element uuid="51a2a7e1-046e-47c3-b6e8-5f3c8a44d07f" manual="true">
+      <element uuid="ff8c9a18-596c-4e5b-9b7a-69bf520a3d00" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection12</seg>
+      </bo>
+    </element>
+    <element uuid="03d817aa-8103-4054-8b58-ee6c3749d3a1" manual="true">
+      <element uuid="fa986cc6-97b4-4b17-af69-8492b8a34208" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection13</seg>
+      </bo>
+    </element>
+    <element uuid="d4a48257-e01b-4d17-a95e-c34536b051d9" manual="true">
+      <element uuid="c94a24cb-dedb-47dd-82f3-78ec3a696817" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection14</seg>
+      </bo>
+    </element>
+    <element uuid="7a9c06fd-dbbd-4994-b7df-a83a7d78d78c" manual="true">
+      <element uuid="085abd2a-5c2a-4d8c-b70c-4c92d5fc80fa" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection15</seg>
+      </bo>
+    </element>
+    <element uuid="f2fb60a5-225a-4b25-be02-51df3448a721" manual="true">
+      <element uuid="33dbba5e-ec5e-4c82-a187-927e3bda0368" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection16</seg>
+      </bo>
+    </element>
+    <element uuid="064888c7-e9ac-4693-b321-a6edbc3ae10a" manual="true">
+      <element uuid="4c5a8836-2268-4e81-8ad8-3226c22091f1" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection2</seg>
+      </bo>
+    </element>
+    <element uuid="ca4aaf69-1a76-4163-a431-819e86d8abbb" manual="true">
+      <element uuid="19fc8023-bab3-42c5-8823-0fafed6e7f5d" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection3</seg>
+      </bo>
+    </element>
+    <element uuid="f52a8aac-dd12-4d5a-8e15-8f037dabc5c1" manual="true">
+      <element uuid="bc0aa801-52a6-4a8f-b8ad-2731543c8b1a" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection4</seg>
+      </bo>
+    </element>
+    <element uuid="91a093c2-417c-4589-a7bf-3a9855e42a43" manual="true">
+      <element uuid="32edc518-a640-4ffa-962f-54f4127df3c9" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection5</seg>
+      </bo>
+    </element>
+    <element uuid="eb35ce57-9dac-4686-b362-dd0b3a636def" manual="true">
+      <element uuid="eabc6f2c-d9d2-48eb-850c-4c3b75e31c2e" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection6</seg>
+      </bo>
+    </element>
+    <element uuid="166a54a6-412c-4e30-8215-f7060d151ed5" manual="true">
+      <element uuid="02df6f2b-b231-4271-a8b3-77362d3635b2" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection7</seg>
+      </bo>
+    </element>
+    <element uuid="31a25d1f-1cb0-4c5e-bf57-3933ac97044d" manual="true">
+      <element uuid="c38fa3c1-2a7c-4abf-9d2f-860fd6ddf35b" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection8</seg>
+      </bo>
+    </element>
+    <element uuid="d6ff5120-4b9a-4cc2-9137-59c923db0d1a" manual="true">
+      <element uuid="6263afe3-774b-46c7-9c52-ec2fc4bfad35" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>computing_module_computing_module_impl_new_connection9</seg>
+      </bo>
+    </element>
+    <element uuid="9ee58eab-1c2e-4d3f-906e-3c124ed373e1" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>analogical_switch</seg>
+      </bo>
+      <position y="490.0"/>
+    </element>
+    <element uuid="42d465e6-bc40-4e2b-859d-cc00601fe242" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>anomaly</seg>
+      </bo>
+      <position x="2617.0" y="2150.0"/>
+    </element>
+    <element uuid="877828af-ebed-4c89-90e4-5e625bd2c557" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>circuit_pressurized</seg>
+      </bo>
+      <position y="1050.0"/>
+    </element>
+    <element uuid="03868a6d-9a89-4209-b160-d158b8215619" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>close_ev</seg>
+      </bo>
+      <position x="2612.0" y="742.0"/>
+    </element>
+    <element uuid="8258832d-ecc5-46d9-8e74-ad511c2e0778" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>databusintern</seg>
+      </bo>
+      <position y="190.0"/>
+    </element>
+    <element uuid="ad65ac73-efd5-4109-826e-b71716876489" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>door_closed</seg>
+      </bo>
+      <position y="620.0"/>
+    </element>
+    <element uuid="4c91fcc9-c68d-421d-ac13-408cb919cbb1" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>door_open</seg>
+      </bo>
+      <position y="900.0"/>
+    </element>
+    <element uuid="fb4bb0bc-472d-44c1-ab15-4ca0a605ede7" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>extend_ev</seg>
+      </bo>
+      <position x="2604.0" y="260.0"/>
+    </element>
+    <element uuid="8a8a3aa7-1ae4-41e6-bc99-a551eeb39a53" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>gear_extended</seg>
+      </bo>
+      <position y="280.0"/>
+    </element>
+    <element uuid="96618d84-ddfa-4237-ad41-4b1afed9f830" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>gear_retracted</seg>
+      </bo>
+      <position y="1270.0"/>
+    </element>
+    <element uuid="57b07735-f5e2-483b-b349-e10492169506" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>gear_shock_absorber</seg>
+      </bo>
+      <position y="1390.0"/>
+    </element>
+    <element uuid="898256db-be8d-40a6-b3ab-1680de95e2ee" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>gears_locked_down</seg>
+      </bo>
+      <position x="2545.0" y="2230.0"/>
+    </element>
+    <element uuid="8ae751e0-237c-45d5-b9fb-8be8b78783c6" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>gears_manoeuvring</seg>
+      </bo>
+      <position x="2545.0" y="2070.0"/>
+    </element>
+    <element uuid="1ac66803-d3ce-4fa0-819a-410d85f171f6" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>general_ev</seg>
+      </bo>
+      <position x="2599.0" y="950.0"/>
+    </element>
+    <element uuid="87c6facf-bd1e-4e96-b5e3-5fed39f88f02" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>handle</seg>
+      </bo>
+      <position y="742.0"/>
+    </element>
+    <element uuid="8f54f48a-3234-46f0-80b9-da7076c5028a" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>open_ev</seg>
+      </bo>
+      <position x="2614.0" y="480.0"/>
+    </element>
+    <element uuid="c5e32d0c-d7cc-42c8-b6e3-154b74da55a0" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>retract_ev</seg>
+      </bo>
+      <position x="2604.0" y="1210.0"/>
+    </element>
+    <element uuid="4d71a511-97a8-4e40-92d1-c3119d332b04" manual="true">
+      <bo>
+        <seg>realization</seg>
+      </bo>
+    </element>
+    <element uuid="352321cf-7a04-41ce-b263-8333d06ae0be" manual="true">
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>computing_module_general_processor_impl</seg>
+      </bo>
+      <position x="270.0" y="34.0"/>
+      <size width="513.0" height="35.0"/>
+    </element>
+    <element uuid="f4e188af-4322-4114-8240-fbd81162e86c" manual="true">
+      <element uuid="5b5820ce-c39c-43d9-a11e-7b28c0b29348" manual="true">
+        <element uuid="118e4619-998b-4042-b9fe-790f0d9489cd" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection</seg>
+        </bo>
+      </element>
+      <element uuid="6356909b-e46d-41e8-9d23-9ae1cdcb637a" manual="true">
+        <element uuid="3d16bccd-e332-4dd1-96b0-c27090579e53" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection10</seg>
+        </bo>
+      </element>
+      <element uuid="01bfa3f0-2338-4faf-bdcc-61a3ae75c891" manual="true">
+        <element uuid="cb8687a1-aab9-4b02-bf7b-56ea126ef87b" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection11</seg>
+        </bo>
+      </element>
+      <element uuid="08df0dcf-bb3c-4384-8790-0f5c46defb93" manual="true">
+        <element uuid="e7628942-54f6-4591-963f-f44ea0b4db37" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection12</seg>
+        </bo>
+      </element>
+      <element uuid="07bdc0ff-68b4-404e-a36d-c327b6a5ae88" manual="true">
+        <element uuid="a2b076fc-ff66-4b42-bc40-9cb94d5c0e1d" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection13</seg>
+        </bo>
+      </element>
+      <element uuid="8b50e3cf-dd62-45d6-83e2-72210c6c4924" manual="true">
+        <element uuid="77472810-604a-4b13-9bd5-dd28624cab94" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection14</seg>
+        </bo>
+      </element>
+      <element uuid="56de7db7-9db5-430e-b080-77a0eff848d2" manual="true">
+        <element uuid="0719f36a-ef33-4ef8-b3af-8e7543cacd40" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection15</seg>
+        </bo>
+      </element>
+      <element uuid="ae6b0270-3bd8-4f2d-84e5-33c471c6339c" manual="true">
+        <element uuid="149d6e2c-2176-48a0-8265-24b53deeaa53" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection16</seg>
+        </bo>
+      </element>
+      <element uuid="6ce9ffdb-f460-43c4-837d-2e77011322bf" manual="true">
+        <element uuid="18cae54f-e6e9-4a4d-9186-1adfce1aa994" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection17</seg>
+        </bo>
+      </element>
+      <element uuid="ee00e6eb-6616-4ca6-b142-3394e82fec00" manual="true">
+        <element uuid="05854f9a-ece3-4333-baaa-9f42145cb480" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection18</seg>
+        </bo>
+      </element>
+      <element uuid="bd2f248b-22fa-4674-ae38-3b02273cd44b" manual="true">
+        <element uuid="74f75442-d3cb-43bb-a5e3-8e7caa5b4591" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection19</seg>
+        </bo>
+      </element>
+      <element uuid="f1c4ec4a-056b-4b28-81e6-92a8869c57fd" manual="true">
+        <element uuid="07a045dd-3f97-43bd-aebc-35efd68e24fa" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection20</seg>
+        </bo>
+      </element>
+      <element uuid="cb001a81-f912-48e1-b279-bf309303e9cb" manual="true">
+        <element uuid="e9fed086-c135-4c86-bbb9-0fa249267e90" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection21</seg>
+        </bo>
+      </element>
+      <element uuid="e2c26f6f-b34b-4568-a018-7f675dc0a0af" manual="true">
+        <element uuid="bb87696e-ea60-43f9-b2b0-ec44c6d8f522" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection22</seg>
+        </bo>
+      </element>
+      <element uuid="4a94318d-0f4c-4b92-8205-3d0ff3e92ed0" manual="true">
+        <element uuid="5557335c-7b6d-4907-820a-bded49638410" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection23</seg>
+        </bo>
+      </element>
+      <element uuid="18ce0d41-de38-4fcd-91a6-66a841933309" manual="true">
+        <element uuid="52056bc9-e403-484a-bb40-375788f69a84" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection24</seg>
+        </bo>
+      </element>
+      <element uuid="b4795dc0-e03b-4b24-8516-2caee4cff236" manual="true">
+        <element uuid="067cd79f-8ef8-47df-b7ba-dcdf0a43fa91" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection25</seg>
+        </bo>
+      </element>
+      <element uuid="938324db-602f-4182-8146-628a4bd5c637" manual="true">
+        <element uuid="c069baea-8fa6-4db3-9cf1-a247d46dff47" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection26</seg>
+        </bo>
+        <bendpoints>
+          <point x="322.0" y="2258.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="65ba01a2-c3dc-43e9-8fb5-8ea6aa0f38e0" manual="true">
+        <element uuid="b2ca75c2-69d0-4a91-b91d-d5727cc8101f" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection27</seg>
+        </bo>
+        <bendpoints>
+          <point x="442.0" y="2212.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="1ae3920f-d102-4457-ae64-ed3bd93e89e7" manual="true">
+        <element uuid="5525c1eb-0e9f-4a91-8534-8a91b538f5d6" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection28</seg>
+        </bo>
+        <bendpoints>
+          <point x="396.0" y="2302.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="bb12daf7-d508-4c22-8715-90b9abac1925" manual="true">
+        <element uuid="3761dee3-dcf7-493b-a926-3ad184d36ced" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection29</seg>
+        </bo>
+        <bendpoints>
+          <point x="352.0" y="2354.0"/>
+        </bendpoints>
+      </element>
+      <element uuid="1d19e11c-9156-4656-9459-8338b824ebde" manual="true">
+        <element uuid="63648be1-fb8e-43ae-9799-75d976fc3498" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection3</seg>
+        </bo>
+      </element>
+      <element uuid="e213b361-c130-4818-b901-bc854a331da2" manual="true">
+        <element uuid="dc45adc5-4300-40ec-a234-80e1ef6fc322" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection4</seg>
+        </bo>
+      </element>
+      <element uuid="1aa789d6-7059-446a-a9af-3afbf346e0ab" manual="true">
+        <element uuid="4b2438b2-fac3-439a-a5eb-62dbd40efb93" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection5</seg>
+        </bo>
+      </element>
+      <element uuid="a0e7f549-0d30-49ba-8c19-548eb3c8ab64" manual="true">
+        <element uuid="3f53e6c2-97d5-4ec8-91e9-5d8087d0b596" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection6</seg>
+        </bo>
+      </element>
+      <element uuid="41b98403-1071-4fd6-aab9-33c47503e171" manual="true">
+        <element uuid="39c7f6cf-0bde-4a6e-8a76-57c8058b8ce0" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection7</seg>
+        </bo>
+      </element>
+      <element uuid="3e7ea379-3420-42c7-ac00-2fd74106848c" manual="true">
+        <element uuid="ba28ea9a-3117-4cb4-a2f5-036ce5e7f913" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection8</seg>
+        </bo>
+      </element>
+      <element uuid="6fcea384-7552-4261-88ef-68bc549f67ef" manual="true">
+        <element uuid="16425d66-46be-47e4-b1df-74879d0f03ae" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_connection9</seg>
+        </bo>
+      </element>
+      <element uuid="6f72cdf8-ba4e-406a-91c8-6fd3d93c5f5d" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>analogical_switch</seg>
+        </bo>
+        <position y="336.0"/>
+      </element>
+      <element uuid="76b5a249-23ea-4c7a-ac55-28456be3bdda" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>anomaly</seg>
+        </bo>
+        <position x="1958.0" y="2080.0"/>
+      </element>
+      <element uuid="5286e5a5-8395-4464-86ce-fae0260cc532" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>circuit_pressurized</seg>
+        </bo>
+        <position y="926.0"/>
+      </element>
+      <element uuid="4769694c-dcce-4958-a6a9-0e7a026a7a10" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>close_ev</seg>
+        </bo>
+        <position x="1953.0" y="676.0"/>
+      </element>
+      <element uuid="da1a747e-cd4b-4e66-9c8e-32606add7410" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_closed</seg>
+        </bo>
+        <position y="496.0"/>
+      </element>
+      <element uuid="e99f5378-6b97-4ce8-9857-4be004778962" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_open</seg>
+        </bo>
+        <position y="778.0"/>
+      </element>
+      <element uuid="caf5909b-c19c-4154-a4a1-fcd7cddb9460" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>extend_ev</seg>
+        </bo>
+        <position x="1945.0" y="230.0"/>
+      </element>
+      <element uuid="7f4a2a47-bc1d-4fb5-ad18-ba7936c4a9b2" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>gear_extended</seg>
+        </bo>
+        <position y="140.0"/>
+      </element>
+      <element uuid="8ea6cdfd-cca8-47e1-a047-9053d367b678" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>gear_retracted</seg>
+        </bo>
+        <position y="1150.0"/>
+      </element>
+      <element uuid="84a7f17b-2d88-4fc3-a62b-09499dfcec5c" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>gear_shock_absorber</seg>
+        </bo>
+        <position y="1440.0"/>
+      </element>
+      <element uuid="fc26421c-eae2-4c41-bbd5-b62a89883d1d" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>gears_locked_down</seg>
+        </bo>
+        <position x="1886.0" y="2190.0"/>
+      </element>
+      <element uuid="0788a9cb-7577-44f2-a0d0-a8c5d7c9fb78" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>gears_manoeuvring</seg>
+        </bo>
+        <position x="1886.0" y="1990.0"/>
+      </element>
+      <element uuid="4efaecb2-10a3-4aef-9361-43d80cd84f2d" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>general_ev</seg>
+        </bo>
+        <position x="1940.0" y="916.0"/>
+      </element>
+      <element uuid="9be0efa5-2f13-43a1-a74a-2109c760e1b9" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>handle</seg>
+        </bo>
+        <position y="638.0"/>
+      </element>
+      <element uuid="ab01bac9-8e19-4bdc-9af2-613864c4b5ef" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>open_ev</seg>
+        </bo>
+        <position x="1955.0" y="450.0"/>
+      </element>
+      <element uuid="fe444ac7-68f3-4a23-877e-4c1c8f682920" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>retract_ev</seg>
+        </bo>
+        <position x="1945.0" y="1160.0"/>
+      </element>
+      <element uuid="983a2884-3c85-4d2b-a3df-edef48f82ab6" manual="true">
+        <element uuid="697a1fc7-c0c7-4401-b5f0-f5dadf75ea0b" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>anomaly</seg>
+          </bo>
+          <position x="1519.0" y="128.0"/>
+        </element>
+        <element uuid="f31a36d4-5810-491e-9630-7ca0e32366e4" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>door_closed</seg>
+          </bo>
+          <position y="166.0"/>
+        </element>
+        <element uuid="141eebe3-dd58-4d44-89e2-b8448fbce99e" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>door_open</seg>
+          </bo>
+          <position y="114.0"/>
+        </element>
+        <element uuid="393bf643-7ffa-423d-a909-1be0fe4f08cc" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>gears_extended</seg>
+          </bo>
+          <position y="23.0"/>
+        </element>
+        <element uuid="5d55ff43-c8a3-4c58-ad4c-3abcb70f9b45" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>gears_locked_down</seg>
+          </bo>
+          <position x="1447.0" y="206.0"/>
+        </element>
+        <element uuid="f2bb4902-cc16-4646-9e94-fd9a03f84734" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>gears_manoeuvering</seg>
+          </bo>
+          <position x="1439.0" y="70.0"/>
+        </element>
+        <element uuid="8247d083-bc15-4766-ae76-af85b5813b27" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>gears_retracted</seg>
+          </bo>
+          <position y="70.0"/>
+        </element>
+        <element uuid="8126718c-b253-4b1e-8238-17d8b972715c" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>in_anomaly</seg>
+          </bo>
+          <position y="218.0"/>
+        </element>
+        <element uuid="c360aff4-0711-41d4-b207-6301b328c541" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>sc_type</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>computing_module_general_process_computing_module_general_processus_impl_new_subcomponent</seg>
+        </bo>
+        <position x="228.0" y="1968.0"/>
+        <size width="1592.0" height="292.0"/>
+      </element>
+      <element uuid="dcaff367-41ff-43d7-91a7-6e7995879ad8" manual="true">
+        <element uuid="7160aa88-4e27-4adf-b5ba-80a538701b64" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>analogic_switch</seg>
+          </bo>
+          <position y="404.0"/>
+        </element>
+        <element uuid="8702bce9-4b79-4e46-821a-dca29abf42c8" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>circuit_pressurized</seg>
+          </bo>
+          <position y="88.0"/>
+        </element>
+        <element uuid="e9dec1d9-a05e-4808-a488-ce0ecee03fc5" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>close_ev</seg>
+          </bo>
+          <position x="1341.0" y="404.0"/>
+        </element>
+        <element uuid="a5b7ac7d-99b7-4c8c-8d4e-c20159d5befb" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>door_closed</seg>
+          </bo>
+          <position y="152.0"/>
+        </element>
+        <element uuid="d11d31d2-8de0-490b-8d02-8828200e67e8" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>door_open</seg>
+          </bo>
+          <position y="336.0"/>
+        </element>
+        <element uuid="2ae2dc7d-8e72-4ccd-93e0-88ff98ef74f9" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>extend_ev</seg>
+          </bo>
+          <position x="1333.0" y="55.0"/>
+        </element>
+        <element uuid="662580e9-6357-4ffa-b2e7-7243126243f2" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>gears_extended</seg>
+          </bo>
+          <position y="38.0"/>
+        </element>
+        <element uuid="75a96f8d-d0b4-4413-b5f1-b4f33295b61c" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>general_ev</seg>
+          </bo>
+          <position x="1328.0" y="182.0"/>
+        </element>
+        <element uuid="5dfb32fa-9244-4d8b-9864-552ff7aa72d9" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>handle</seg>
+          </bo>
+          <position y="220.0"/>
+        </element>
+        <element uuid="5e994086-9f0e-4290-9600-667549b2fb04" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>open_ev</seg>
+          </bo>
+          <position x="1343.0" y="311.0"/>
+        </element>
+        <element uuid="d8b48b55-5b59-4071-bc53-7b80d0c32ecb" manual="true">
+          <element uuid="ce7ea6ba-5751-491c-a1b3-d70dc2f9e5c6" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>door_open</seg>
+            </bo>
+            <position y="88.0"/>
+          </element>
+          <element uuid="b3eb8a61-3d2c-4f84-bccf-14bd88c03bfc" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>extend_ev</seg>
+            </bo>
+            <position x="823.0" y="48.0"/>
+          </element>
+          <element uuid="e60c5eeb-48af-4242-8af5-e47f62afe4ea" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>gears_extended</seg>
+            </bo>
+            <position y="44.0"/>
+          </element>
+          <element uuid="2b4b5b29-9fa3-44e8-b457-7c05c0b785a0" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>handle</seg>
+            </bo>
+            <position/>
+          </element>
+          <element uuid="7d54bea3-30db-48b1-a18a-f95a0115b173" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>sc_type</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>subcomponent</seg>
+            <seg>stimulate_extend_ev_impl</seg>
+          </bo>
+          <position x="300.0" y="200.0"/>
+          <size width="909.0" height="137.0"/>
+        </element>
+        <element uuid="aca58948-d7f4-46ed-8613-3b7e8d29953b" manual="true">
+          <element uuid="47c4b11a-a64d-47c3-a594-79b8daba1da5" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>analogic_switch</seg>
+            </bo>
+            <position y="48.0"/>
+          </element>
+          <element uuid="3b44a56c-ce2c-45d2-b581-766c11309898" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>circuit_pressurized</seg>
+            </bo>
+            <position y="92.0"/>
+          </element>
+          <element uuid="fe84a2aa-45c1-42f8-a25e-803e7688d94e" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>general_ev</seg>
+            </bo>
+            <position x="711.0" y="90.0"/>
+          </element>
+          <element uuid="b2923bc6-313b-43ef-8702-ae6b116db38e" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>handle</seg>
+            </bo>
+            <position y="4.0"/>
+          </element>
+          <element uuid="170266bb-2212-44e6-9334-95e40ea11fea" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>open_ev</seg>
+            </bo>
+            <position x="726.0" y="42.0"/>
+          </element>
+          <element uuid="987e48fb-a187-4126-a3e7-592e4548143f" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>sc_type</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>subcomponent</seg>
+            <seg>stimulategen_ev_open_ev_impl</seg>
+          </bo>
+          <position x="320.0" y="55.0"/>
+          <size width="802.0" height="136.0"/>
+        </element>
+        <element uuid="e7e44833-61df-4678-9f83-1d63768a63bb" manual="true">
+          <element uuid="3e024340-bb6d-4ecc-86f0-e1de2c744d5f" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>circuit_pressurized</seg>
+            </bo>
+            <position y="88.0"/>
+          </element>
+          <element uuid="dc406341-a8ca-4adb-9cbd-0de0de44a458" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>close_ev</seg>
+            </bo>
+            <position x="915.0" y="23.0"/>
+          </element>
+          <element uuid="eca5956c-6611-4479-b8fb-4e80e4a3ffb6" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>door_closed</seg>
+            </bo>
+            <position y="44.0"/>
+          </element>
+          <element uuid="a2e6956a-ee54-481c-8423-a381369c8cdd" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>general_ev</seg>
+            </bo>
+            <position x="902.0" y="67.0"/>
+          </element>
+          <element uuid="34132efd-a598-4c47-9378-d400555e4f74" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>handle</seg>
+            </bo>
+            <position/>
+          </element>
+          <element uuid="ec3338d5-0a84-4d6e-af27-b14828f685b9" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>sc_type</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>subcomponent</seg>
+            <seg>stop_close_ev_gen_ev_impl</seg>
+          </bo>
+          <position x="270.0" y="498.0"/>
+          <size width="993.0" height="151.0"/>
+        </element>
+        <element uuid="7d8e42f8-80d8-4502-ac1a-91bf992958ad" manual="true">
+          <element uuid="f2af095c-ef35-4387-a15d-5af690116931" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>close_ev</seg>
+            </bo>
+            <position x="944.0" y="96.0"/>
+          </element>
+          <element uuid="d3b0032d-3e1d-4927-ac9c-20a67c9f4997" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>door_open</seg>
+            </bo>
+            <position y="88.0"/>
+          </element>
+          <element uuid="3a340f34-f964-4610-bd11-7c1bb64b76ec" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>extend_ev</seg>
+            </bo>
+            <position x="936.0" y="8.0"/>
+          </element>
+          <element uuid="0db757ab-c6d2-429f-a34f-bc621b154644" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>gears_extended</seg>
+            </bo>
+            <position y="44.0"/>
+          </element>
+          <element uuid="99e926e1-23ee-4f2c-8139-9bb821b6a7a2" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>handle</seg>
+            </bo>
+            <position/>
+          </element>
+          <element uuid="bd90c118-4a82-4d6a-ab59-7282e4b57167" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>open_ev</seg>
+            </bo>
+            <position x="946.0" y="52.0"/>
+          </element>
+          <element uuid="7d27f692-b84f-4ef1-85e4-1e1b8705c6c5" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>sc_type</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>subcomponent</seg>
+            <seg>stop_extend_ev_open_ev_stimulate_close_ev_impl</seg>
+          </bo>
+          <position x="290.0" y="349.0"/>
+          <size width="1022.0" height="150.0"/>
+        </element>
+        <element uuid="4775ed6b-5aba-4855-bedb-0a57e78e072f" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>sc_type</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>extend_gears_threadgroup_impl</seg>
+        </bo>
+        <position x="228.0" y="76.0"/>
+        <size width="1419.0" height="691.0"/>
+      </element>
+      <element uuid="1d9f897f-da04-4eb8-8f08-9f418be8f486" manual="true">
+        <element uuid="1c1c9a45-6113-45c8-9a6f-e3d0ccb1e149" manual="true">
+          <element uuid="b0e2cd81-75f6-48c3-aa64-42fb4fb63989" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection</seg>
+          </bo>
+        </element>
+        <element uuid="05a56513-5409-4a9b-9385-878d1f1d3b53" manual="true">
+          <element uuid="96b8bfd7-6fcd-44b1-828c-7fce70278a8f" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection10</seg>
+          </bo>
+        </element>
+        <element uuid="16d976aa-9670-4f20-860f-7853d8fa73bb" manual="true">
+          <element uuid="da3122ce-2e2c-4b20-8e1b-a962b9d41e89" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection11</seg>
+          </bo>
+        </element>
+        <element uuid="3edd4efa-caec-42cb-a57d-336ab9d721f4" manual="true">
+          <element uuid="7c635774-bd96-4c00-8cca-f66408ae3abf" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection12</seg>
+          </bo>
+        </element>
+        <element uuid="92ff9c32-d395-4107-a827-4fa5e259e761" manual="true">
+          <element uuid="3867a4f2-3476-4d41-8373-05951647911e" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection13</seg>
+          </bo>
+        </element>
+        <element uuid="824ba4a9-7165-4115-9a44-e70388fe2221" manual="true">
+          <element uuid="54b58f47-23c4-44b8-9751-c1b36b7678d6" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection14</seg>
+          </bo>
+        </element>
+        <element uuid="7ac0ecf8-e85b-458f-961c-e1f305b94b67" manual="true">
+          <element uuid="7b4aed91-d50e-458f-905a-f3d3eff69b38" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection15</seg>
+          </bo>
+        </element>
+        <element uuid="6c048f1e-fcd9-4548-8aa1-b2aff8358cd4" manual="true">
+          <element uuid="566fa586-8c71-4b26-a8cd-56513136183d" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection16</seg>
+          </bo>
+        </element>
+        <element uuid="f77d5b66-4922-4b1f-b3b6-c75c11dca1b6" manual="true">
+          <element uuid="97aaf915-c957-4934-b0a7-9fd7c4687722" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection17</seg>
+          </bo>
+        </element>
+        <element uuid="b8661d36-bf14-4246-99cc-4ab3ab53698b" manual="true">
+          <element uuid="a5a9c1aa-ba94-4806-b252-a5101fa83715" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection18</seg>
+          </bo>
+        </element>
+        <element uuid="f822e381-b5f7-49f4-b232-bb952684481e" manual="true">
+          <element uuid="9abaa578-0239-4797-a0a4-b4a2d2c29442" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection19</seg>
+          </bo>
+        </element>
+        <element uuid="776d91e2-f072-46f0-b634-66371a2273c0" manual="true">
+          <element uuid="4ada25bb-1d73-408f-8bfd-2e4efed75a2e" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection2</seg>
+          </bo>
+        </element>
+        <element uuid="542c5ca5-ce30-4ecf-8373-dac8bf36d106" manual="true">
+          <element uuid="04eea1d1-bd1e-47e5-98dc-5b11af2b33f6" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection20</seg>
+          </bo>
+        </element>
+        <element uuid="89f9e185-c026-4a47-b724-99189d188a58" manual="true">
+          <element uuid="df603559-aebb-4b35-b7ca-72392f24a89b" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection21</seg>
+          </bo>
+        </element>
+        <element uuid="6e0c6bba-24e3-4d34-9580-df30f8c68264" manual="true">
+          <element uuid="28994086-f1ba-459c-9057-97d127a4f104" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection22</seg>
+          </bo>
+        </element>
+        <element uuid="c4e32b7b-341a-402e-84df-3f497b2a4543" manual="true">
+          <element uuid="7b394467-9af4-4f1d-be8f-5b8dd6397d34" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection23</seg>
+          </bo>
+        </element>
+        <element uuid="726073b6-56ec-4440-b6bd-7b86f051bc47" manual="true">
+          <element uuid="12251c0f-e3c1-44da-a50e-295ac74a0fdf" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection24</seg>
+          </bo>
+        </element>
+        <element uuid="fe651bac-b7f9-47f7-ae50-b7053c4e8278" manual="true">
+          <element uuid="91034814-2c60-4b39-9980-58f4b6b1a89c" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection3</seg>
+          </bo>
+        </element>
+        <element uuid="c10d0073-f7cb-4243-b7ba-6667feabbdcb" manual="true">
+          <element uuid="871aeae8-4d87-4eae-b12c-a96ff0d892e2" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection4</seg>
+          </bo>
+        </element>
+        <element uuid="dee9a475-cf18-473e-a062-44ef233b5948" manual="true">
+          <element uuid="47b70896-a09d-4eb7-bb25-9f311c326076" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection5</seg>
+          </bo>
+        </element>
+        <element uuid="1351235d-f7fd-4e4b-b9d6-04bc6f738150" manual="true">
+          <element uuid="c42a4aa2-5d14-4efd-aebb-616946c1605b" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection6</seg>
+          </bo>
+        </element>
+        <element uuid="509052fd-4da2-41ff-afc7-599c575b6f5e" manual="true">
+          <element uuid="63644126-8131-45bf-b715-12b095370be5" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection7</seg>
+          </bo>
+        </element>
+        <element uuid="32238941-04a6-4ad7-8ed3-edf99f7b7f31" manual="true">
+          <element uuid="669feec3-dbaf-44bc-b088-c9bdddbd1011" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection8</seg>
+          </bo>
+        </element>
+        <element uuid="27a95dfb-2e8d-4de8-8d18-600f6f94ed24" manual="true">
+          <element uuid="5d352722-30d8-4f4f-9544-9c8b31f4449b" manual="true">
+            <bo>
+              <seg>tag</seg>
+              <seg>unidirectional</seg>
+            </bo>
+          </element>
+          <bo>
+            <seg>connection</seg>
+            <seg>retract_gears_threadgroup_retract_gears_threadgroup_impl_new_connection9</seg>
+          </bo>
+        </element>
+        <element uuid="b02d4d28-b799-402b-9df2-defc8bda5bcc" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>analogic_switch</seg>
+          </bo>
+          <position y="165.0"/>
+        </element>
+        <element uuid="32ff2d7f-6978-446a-981c-5b627273da7d" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>circuit_pressurized</seg>
+          </bo>
+          <position y="513.0"/>
+        </element>
+        <element uuid="e6ff1f73-b85c-4173-a298-b0f997fd2ade" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>close_ev</seg>
+          </bo>
+          <position x="1541.0" y="256.0"/>
+        </element>
+        <element uuid="986bf8d1-2526-4638-8b30-58477a289175" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>door_closed</seg>
+          </bo>
+          <position y="456.0"/>
+        </element>
+        <element uuid="5973ba4e-6cfa-4e00-8498-542c9ed04902" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>door_open</seg>
+          </bo>
+          <position y="351.0"/>
+        </element>
+        <element uuid="c552d4ad-78d3-4c01-af6f-49ff40d17062" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>gear_shock_absorber</seg>
+          </bo>
+          <position y="624.0"/>
+        </element>
+        <element uuid="8639878f-1ca9-4a84-9061-9faceb509fce" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>gears_retracted</seg>
+          </bo>
+          <position y="256.0"/>
+        </element>
+        <element uuid="a94c1a37-a4a8-4446-9659-d29dff49b7ed" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>general_ev</seg>
+          </bo>
+          <position x="1528.0" y="351.0"/>
+        </element>
+        <element uuid="114aed7d-d05d-4890-b953-63ea269927bc" manual="true" dockArea="left">
+          <bo>
+            <seg>feature</seg>
+            <seg>handle</seg>
+          </bo>
+          <position y="32.0"/>
+        </element>
+        <element uuid="d684777a-0833-49ec-9d8f-9bf5fe057c40" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>open_ev</seg>
+          </bo>
+          <position x="1543.0" y="165.0"/>
+        </element>
+        <element uuid="eb9695e5-5f89-4f61-ac80-f0510043e5f2" manual="true" dockArea="right">
+          <bo>
+            <seg>feature</seg>
+            <seg>retract_ev</seg>
+          </bo>
+          <position x="1533.0" y="456.0"/>
+        </element>
+        <element uuid="4923895c-47ae-4618-a55e-95910f133d24" manual="true">
+          <element uuid="08b21f8d-5251-4762-a68b-7850fe658c4d" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>door_open</seg>
+            </bo>
+            <position y="159.0"/>
+          </element>
+          <element uuid="9ccfd93c-9676-4902-97c5-8fc0e4080bdd" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>gear_shock_absorber</seg>
+            </bo>
+            <position y="59.0"/>
+          </element>
+          <element uuid="cdb5876b-acd4-4f45-81b7-d428f336af76" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>gears_retracted</seg>
+            </bo>
+            <position y="103.0"/>
+          </element>
+          <element uuid="2e3985fc-1c58-494e-9202-7a015b6e1c94" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>handle</seg>
+            </bo>
+            <position y="10.0"/>
+          </element>
+          <element uuid="9c62c344-b0db-428d-8c0b-ee37853d6c1a" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>retract_ev</seg>
+            </bo>
+            <position x="868.0" y="39.0"/>
+          </element>
+          <bo>
+            <seg>subcomponent</seg>
+            <seg>stimulate_retract_ev_impl</seg>
+          </bo>
+          <position x="269.0" y="300.0"/>
+          <size width="954.0" height="198.0"/>
+        </element>
+        <element uuid="705f6928-7ad7-4f36-85dd-78b8241f430d" manual="true">
+          <element uuid="a408c7b6-dbd8-4e31-949b-fa4a27b4d5dd" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>analogic_switch</seg>
+            </bo>
+            <position y="113.0"/>
+          </element>
+          <element uuid="ce808900-7391-4682-91e4-3313f8ee13c7" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>circuit_pressurized</seg>
+            </bo>
+            <position y="159.0"/>
+          </element>
+          <element uuid="ff207666-9ed1-40d2-abc7-f3ce7a34292c" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>gear_shock_absorber</seg>
+            </bo>
+            <position y="69.0"/>
+          </element>
+          <element uuid="47ac0f66-babe-4a29-8b45-564d658eb561" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>general_ev</seg>
+            </bo>
+            <position x="948.0" y="109.0"/>
+          </element>
+          <element uuid="0819919c-d195-41db-ab31-2696e884f51d" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>handle</seg>
+            </bo>
+            <position y="10.0"/>
+          </element>
+          <element uuid="2dc99708-f2ba-41ee-a349-c25016de1080" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>open_ev</seg>
+            </bo>
+            <position x="963.0" y="48.0"/>
+          </element>
+          <bo>
+            <seg>subcomponent</seg>
+            <seg>stimulategen_ev_open_ev_impl</seg>
+          </bo>
+          <position x="280.0" y="80.0"/>
+          <size width="1039.0" height="198.0"/>
+        </element>
+        <element uuid="4d74fc85-6217-4493-af94-bdaa435a5d78" manual="true">
+          <element uuid="ec9dbf06-32e2-477c-8f56-e34d0f035aeb" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>circuit_pressurized</seg>
+            </bo>
+            <position y="168.0"/>
+          </element>
+          <element uuid="4c8232f0-0ebe-49e6-b624-e1a73bc7f8aa" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>close_ev</seg>
+            </bo>
+            <position x="943.0" y="138.0"/>
+          </element>
+          <element uuid="0ec54419-446c-433a-adfd-2141cd35fa59" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>door_closed</seg>
+            </bo>
+            <position y="108.0"/>
+          </element>
+          <element uuid="aeb80287-fdff-42d1-a1eb-7ceb5e7d0b03" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>gear_shock_absorber</seg>
+            </bo>
+            <position y="59.0"/>
+          </element>
+          <element uuid="abc1b1e9-1319-47f1-8183-58cc59e809c0" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>general_ev</seg>
+            </bo>
+            <position x="930.0" y="59.0"/>
+          </element>
+          <element uuid="61bad413-ca14-4e7f-9f82-dc543385c131" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>handle</seg>
+            </bo>
+            <position y="10.0"/>
+          </element>
+          <bo>
+            <seg>subcomponent</seg>
+            <seg>stop_close_ev_gen_ev_impl</seg>
+          </bo>
+          <position x="220.0" y="850.0"/>
+          <size width="1021.0" height="218.0"/>
+        </element>
+        <element uuid="41c64713-cfff-4f52-b9df-6644879ef242" manual="true">
+          <element uuid="09da3b28-7c93-4d7c-8071-05c681f851b2" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>close_ev</seg>
+            </bo>
+            <position x="930.0" y="150.0"/>
+          </element>
+          <element uuid="bc4ac56c-bf1a-4dd3-a237-076387649507" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>door_open</seg>
+            </bo>
+            <position y="200.0"/>
+          </element>
+          <element uuid="58c11cf8-e256-459b-b45a-f13308f39bda" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>gear_shock_absorber</seg>
+            </bo>
+            <position y="70.0"/>
+          </element>
+          <element uuid="f4cf9730-255a-4854-8251-34528d3e0cf2" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>gears_retracted</seg>
+            </bo>
+            <position y="130.0"/>
+          </element>
+          <element uuid="b431f554-584e-488b-b591-ce776f865c4f" manual="true" dockArea="left">
+            <bo>
+              <seg>feature</seg>
+              <seg>handle</seg>
+            </bo>
+            <position y="10.0"/>
+          </element>
+          <element uuid="548f1269-c895-413a-b4ce-2319ef4558fb" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>open_ev</seg>
+            </bo>
+            <position x="932.0" y="100.0"/>
+          </element>
+          <element uuid="1c2f61bc-016f-4c52-b1b7-3c37c6db0fce" manual="true" dockArea="right">
+            <bo>
+              <seg>feature</seg>
+              <seg>retract_ev</seg>
+            </bo>
+            <position x="922.0" y="40.0"/>
+          </element>
+          <bo>
+            <seg>subcomponent</seg>
+            <seg>stop_retract_ev_open_ev_stimulate_close_ev_impl</seg>
+          </bo>
+          <position x="242.0" y="560.0"/>
+          <size width="1008.0" height="251.0"/>
+        </element>
+        <element uuid="bf91f33f-b4ff-4526-907d-3d8f8efbea8f" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>sc_type</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>retract_gears_threadgroup_impl</seg>
+        </bo>
+        <position x="220.0" y="816.0"/>
+        <size width="1619.0" height="1131.0"/>
+      </element>
+      <element uuid="19a59897-7d7f-4880-aa09-0e99cce4f7f9" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>sc_type</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>computing_module_general_processus_impl</seg>
+      </bo>
+      <position x="330.0" y="130.0"/>
+      <size width="2031.0" height="2412.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>computing_module.computing_module_impl</seg>
+    </bo>
+    <position x="-70.0" y="60.0"/>
+    <size width="2690.0" height="2542.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>digitalpart::computing_module.computing_module_impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>

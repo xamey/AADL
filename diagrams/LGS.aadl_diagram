@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="0a26a8ab-8524-4edd-bffc-9f7207324321" manual="true">
+    <bo>
+      <seg>package</seg>
+      <seg>lgs</seg>
+    </bo>
+    <position x="12.0" y="12.0"/>
+    <size width="200.0" height="100.0"/>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>lgs</seg>
+    </context>
+  </config>
+</diagram:Diagram>

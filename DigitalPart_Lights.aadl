@@ -1,0 +1,32 @@
+package DigitalPart_Lights_Thread
+public
+	with Base_Types;
+	thread DigitalPart_Lights_Thread
+	features
+		Gears_retracted: in data port Base_Types::Boolean;
+		Door_closed: in data port Base_Types::Boolean;
+		Door_open: in data port Base_Types::Boolean;
+		Gears_extended: in data port Base_Types::Boolean;
+		In_anomaly: in data port Base_Types::Boolean;
+		Gears_locked_down: out data port Base_Types::Boolean;
+		Gears_manoeuvering: out data port Base_Types::Boolean;
+		Anomaly: out data port Base_Types::Boolean;
+	properties
+		Dispatch_Protocol => Periodic;
+		Period => 10ms;
+end DigitalPart_Lights_Thread;
+
+	thread implementation DigitalPart_Lights_Thread.DigitalPart_Lights_Thread_impl
+		annex behavior_specification {** 
+			states 
+				s0: initial complete state;
+			transitions
+				s0 -[on dispatch]-> s0 {
+					Gears_manoeuvering := not In_anomaly and ((not Gears_extended and not Gears_retracted) or (not Door_closed and not Door_open));
+					Gears_locked_down  := not In_anomaly and ((Gears_extended and not Gears_retracted) and (Door_open and not Door_closed));
+					Anomaly            := In_anomaly
+				};
+		**};
+	end thread_lumieres.DigitalPart_Lights_Thread_impl;
+	
+end DigitalPart_Lights_Thread;

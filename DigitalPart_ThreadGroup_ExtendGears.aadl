@@ -1,0 +1,136 @@
+package DigitalPart_ThreadGroup_ExtendGears
+public
+	with Base_Types;
+	with Data_Model;
+	
+	data handle_status
+		properties
+			Data_Model::Data_Representation => Enum;
+			Data_Model::Enumerators => ("up", "down");
+	end handle_status;
+
+	data switch_status
+		properties
+			Data_Model::Data_Representation => Enum;
+			Data_Model::Enumerators => ("open", "close");
+	end switch_status;
+
+	
+	thread StimulateGen_EV_Open_EV
+	features
+		Handle: in data port handle_status;
+		General_EV: out data port Base_Types::Boolean;
+		Open_EV: out data port Base_Types::Boolean;
+		Circuit_pressurized: in data port Base_Types::Boolean;
+		Analogic_switch: in data port switch_status;
+	properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;	
+end StimulateGen_EV_Open_EV;
+
+	thread Stimulate_Extend_EV
+	features
+		Handle: in data port handle_status;
+		Door_open: in data port Base_Types::Boolean;
+		Extend_EV: out data port Base_Types::Boolean;
+		Gears_extended: in data port Base_Types::Boolean;
+	properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
+end Stimulate_Extend_EV;
+
+	thread Stop_Extend_EV_Open_EV_Stimulate_Close_EV
+	features
+		Handle: in data port handle_status;
+		Gears_extended: in data port Base_Types::Boolean;
+		Extend_EV: out data port Base_Types::Boolean;
+		Open_EV: out data port Base_Types::Boolean;
+		Close_EV: out data port Base_Types::Boolean;
+		Door_open: in data port Base_Types::Boolean;
+	properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
+end Stop_Extend_EV_Open_EV_Stimulate_Close_EV;
+
+	thread Stop_Close_EV_Gen_EV
+	features
+		Handle: in data port handle_status;
+		Door_closed: in data port Base_Types::Boolean;
+		Close_EV: out data port Base_Types::Boolean;
+		General_EV: out data port Base_Types::Boolean;
+		Circuit_pressurized: in data port Base_Types::Boolean;
+	properties
+			Dispatch_Protocol => Periodic;
+			Period => 10ms;
+end Stop_Close_EV_Gen_EV;
+
+	thread implementation Stimulate_Extend_EV.Stimulate_Extend_EV_impl
+		annex behavior_specification {**
+		states
+			s0: initial complete state;
+		transitions
+			s0 -[on dispatch]-> s0 {
+				if (Handle = "down" and Gears_extended = false and Door_open = false) Extend_EV:= true
+				end if
+			};
+	**};
+	end Stimulate_Extend_EV.Stimulate_Extend_EV_impl;
+
+	thread implementation Stop_Extend_EV_Open_EV_Stimulate_Close_EV.Stop_Extend_EV_Open_EV_Stimulate_Close_EV_impl
+		annex behavior_specification {**
+		states
+			s0: initial complete state;
+		transitions
+			s0 -[on dispatch]-> s0 {
+				if (Handle = "down" and Gears_extended = true and Door_open = true) Extend_EV:= false; Open_EV:=false; Close_EV:=true
+				end if
+			};
+	**};
+	end Stop_Extend_EV_Open_EV_Stimulate_Close_EV.Stop_Extend_EV_Open_EV_Stimulate_Close_EV_impl;
+
+	thread implementation Stop_Close_EV_Gen_EV.Stop_Close_EV_Gen_EV_impl
+		annex behavior_specification {**
+		states
+			s0: initial complete state;
+		transitions
+			s0 -[on dispatch]-> s0 {
+				if (Handle = "down" and Door_closed=false and Circuit_pressurized = true) Close_EV :=true
+				end if
+			};
+	**};
+	end Stop_Close_EV_Gen_EV.Stop_Close_EV_Gen_EV_impl;
+
+	thread implementation StimulateGen_EV_Open_EV.StimulateGen_EV_Open_EV_impl
+		annex behavior_specification {**
+		states
+			s0: initial complete state;
+		transitions
+			s0 -[on dispatch]-> s0 {
+				if (Handle = "down" and Circuit_pressurized = false and Analogic_switch = "close") General_EV := true
+				end if
+			};
+	**};
+	end StimulateGen_EV_Open_EV.StimulateGen_EV_Open_EV_impl;
+
+	thread group Extend_Gears_ThreadGroup
+	features
+		Handle: in data port handle_status;
+		Door_open: in data port Base_Types::Boolean;
+		Gears_extended: in data port Base_Types::Boolean;
+		Door_closed: in data port Base_Types::Boolean;
+		Circuit_pressurized: in data port Base_Types::Boolean;
+		Analogic_switch: in data port switch_status;
+		Open_EV: out data port Base_Types::Boolean;
+		General_EV: out data port Base_Types::Boolean;
+		Extend_EV: out data port Base_Types::Boolean;
+		Close_EV: out data port Base_Types::Boolean;
+end Extend_Gears_ThreadGroup;
+
+	thread group implementation Extend_Gears_ThreadGroup.Extend_Gears_ThreadGroup_impl
+	subcomponents
+		StimulateGen_EV_Open_EV_impl: thread StimulateGen_EV_Open_EV.StimulateGen_EV_Open_EV_impl;
+		Stimulate_Extend_EV_impl: thread Stimulate_Extend_EV.Stimulate_Extend_EV_impl;
+		Stop_Extend_EV_Open_EV_Stimulate_Close_EV_impl: thread Stop_Extend_EV_Open_EV_Stimulate_Close_EV.Stop_Extend_EV_Open_EV_Stimulate_Close_EV_impl;
+		Stop_Close_EV_Gen_EV_impl: thread Stop_Close_EV_Gen_EV.Stop_Close_EV_Gen_EV_impl;
+end Extend_Gears_ThreadGroup.Extend_Gears_ThreadGroup_impl;
+end DigitalPart_ThreadGroup_ExtendGears;

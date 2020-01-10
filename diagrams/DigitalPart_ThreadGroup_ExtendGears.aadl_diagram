@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="4a60a469-125e-42a2-bb6e-2e9232eeeb64" manual="true">
+    <element uuid="26e23f42-fd32-4f94-a2cf-118854b0a801" manual="true">
+      <element uuid="7e1123d0-c20d-43fb-870b-e20ff302c139" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>analogic_switch</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="1873e448-bd3c-4970-98b5-c250f519226b" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>circuit_pressurized</seg>
+        </bo>
+        <position y="240.0"/>
+      </element>
+      <element uuid="b2209486-3bc0-4fa5-9d9c-38bfa08e6b68" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>close_ev</seg>
+        </bo>
+        <position x="353.0" y="220.0"/>
+      </element>
+      <element uuid="f471488e-8516-4220-86d5-7ce139020973" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_closed</seg>
+        </bo>
+        <position y="285.0"/>
+      </element>
+      <element uuid="dd19907e-8724-4463-853a-c814f06d6d94" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_open</seg>
+        </bo>
+        <position y="195.0"/>
+      </element>
+      <element uuid="f49b75b6-ac1a-4fbd-9461-2efa88fa2fda" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>extend_ev</seg>
+        </bo>
+        <position x="345.0" y="160.0"/>
+      </element>
+      <element uuid="4d83481f-12b8-4794-9edd-0c3d4d1cd1b4" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>gears_extended</seg>
+        </bo>
+        <position y="150.0"/>
+      </element>
+      <element uuid="7c915e24-77de-4a52-b943-6fa964bbaac7" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>general_ev</seg>
+        </bo>
+        <position x="340.0" y="115.0"/>
+      </element>
+      <element uuid="feab9787-b37c-4581-8b63-a652bb72091c" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>handle</seg>
+        </bo>
+        <position y="105.0"/>
+      </element>
+      <element uuid="c2e35659-99b6-43b7-9d14-0b6bb9bad1c4" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>open_ev</seg>
+        </bo>
+        <position x="355.0" y="70.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>extend_gears_threadgroup</seg>
+      </bo>
+      <position x="720.0" y="690.0"/>
+      <size width="431.0" height="325.0"/>
+    </element>
+    <element uuid="660240b5-e7af-4e3d-b090-91b8f23a07c1" manual="true">
+      <element uuid="1be95dd1-c2ea-48ec-a1a6-f1f0eb176cf6" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>extend_gears_threadgroup.extend_gears_threadgroup_impl</seg>
+      </bo>
+      <position x="70.0" y="630.0"/>
+      <size width="483.0" height="35.0"/>
+    </element>
+    <element uuid="54679d13-1434-4733-961c-ea64ace08def" manual="true">
+      <element uuid="b7fc2db9-3746-48b9-9365-22c7f6599c0e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_open</seg>
+        </bo>
+        <position y="90.0"/>
+      </element>
+      <element uuid="ca302fb0-33c6-4e82-b0df-18f701d6b569" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>extend_ev</seg>
+        </bo>
+        <position x="449.0" y="38.0"/>
+      </element>
+      <element uuid="ea6aff80-df01-48d5-8876-5b9ef1af7ce3" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>gears_extended</seg>
+        </bo>
+        <position y="45.0"/>
+      </element>
+      <element uuid="82e54768-d5a5-4b4b-bd37-f7c47a168bc9" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>handle</seg>
+        </bo>
+        <position/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>stimulate_extend_ev</seg>
+      </bo>
+      <position x="600.0" y="200.0"/>
+      <size width="535.0" height="130.0"/>
+    </element>
+    <element uuid="084ec212-b653-478d-8ffb-a2a3b4dd7773" manual="true">
+      <element uuid="5e8e11f7-8176-4935-a64b-104acc8da19b" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>stimulate_extend_ev.stimulate_extend_ev_impl</seg>
+      </bo>
+      <position x="90.0" y="180.0"/>
+      <size width="391.0" height="35.0"/>
+    </element>
+    <element uuid="ce1aa936-bc72-4f05-bb54-44ec00872813" manual="true">
+      <element uuid="299dd2f6-8f5f-402b-b4ed-762c997cc7ca" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>analogic_switch</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="07720b50-0aab-409a-bcc3-e0689ffbc8f3" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>circuit_pressurized</seg>
+        </bo>
+        <position y="124.0"/>
+      </element>
+      <element uuid="23d5cc0d-95a0-4c6d-b273-cad43295c11c" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>general_ev</seg>
+        </bo>
+        <position x="258.0" y="85.0"/>
+      </element>
+      <element uuid="b767d66d-3583-4ab0-9d50-83b42ba939b8" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>handle</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="721d2afa-d5f4-4cc2-89a3-ff58c34fb886" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>open_ev</seg>
+        </bo>
+        <position x="273.0" y="40.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>stimulategen_ev_open_ev</seg>
+      </bo>
+      <position x="590.0" y="20.0"/>
+      <size width="349.0" height="164.0"/>
+    </element>
+    <element uuid="e5261a8b-3e03-4db1-a088-727d48250745" manual="true">
+      <element uuid="ea0b536f-1242-4881-a11e-2b8f2bd0eeab" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>stimulategen_ev_open_ev.stimulategen_ev_open_ev_impl</seg>
+      </bo>
+      <position x="10.0" y="50.0"/>
+      <size width="451.0" height="51.0"/>
+    </element>
+    <element uuid="8fe272a5-d76d-4642-8f21-3b99d9289439" manual="true">
+      <element uuid="7006a685-f54a-4f3a-b8d4-ab8ba2e025e4" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>circuit_pressurized</seg>
+        </bo>
+        <position y="100.0"/>
+      </element>
+      <element uuid="b719de2f-c2a9-4b31-ae02-9c1b509a39f5" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>close_ev</seg>
+        </bo>
+        <position x="757.0" y="18.0"/>
+      </element>
+      <element uuid="cddad44a-dfbd-4b8d-ac23-ebe8c98c356b" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_closed</seg>
+        </bo>
+        <position y="55.0"/>
+      </element>
+      <element uuid="f8dbc63a-f9be-41d7-b9cd-c2aa63843775" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>general_ev</seg>
+        </bo>
+        <position x="744.0" y="63.0"/>
+      </element>
+      <element uuid="38d5f958-e0e6-48f7-b7ff-570790142ee9" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>handle</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>stop_close_ev_gen_ev</seg>
+      </bo>
+      <position x="690.0" y="520.0"/>
+      <size width="835.0" height="140.0"/>
+    </element>
+    <element uuid="5c972435-7789-492b-bfc3-d3244b75e6bd" manual="true">
+      <element uuid="44b8f9b5-e3d8-4488-81ba-03f3700f9361" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>stop_close_ev_gen_ev.stop_close_ev_gen_ev_impl</seg>
+      </bo>
+      <position x="49.0" y="470.0"/>
+      <size width="431.0" height="35.0"/>
+    </element>
+    <element uuid="0e6676e5-afee-4ccf-9956-af30be39c690" manual="true">
+      <element uuid="f2ada8d8-d640-48a7-b45c-5e6360215059" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>close_ev</seg>
+        </bo>
+        <position x="423.0" y="18.0"/>
+      </element>
+      <element uuid="e039555c-6bcc-4f29-bff0-0a8ee0a89b34" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>door_open</seg>
+        </bo>
+        <position y="130.0"/>
+      </element>
+      <element uuid="963cb18f-3ee8-402b-9a10-90e5aaf2ff27" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>extend_ev</seg>
+        </bo>
+        <position x="415.0" y="63.0"/>
+      </element>
+      <element uuid="3bc3c80a-760e-4760-a347-b72df3036e1f" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>gears_extended</seg>
+        </bo>
+        <position y="85.0"/>
+      </element>
+      <element uuid="59f07348-59d0-40fc-9311-cc026a86fe54" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>handle</seg>
+        </bo>
+        <position y="40.0"/>
+      </element>
+      <element uuid="e4450363-1b9e-458d-a163-710e8f24a81a" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>open_ev</seg>
+        </bo>
+        <position x="425.0" y="108.0"/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>stop_extend_ev_open_ev_stimulate_close_ev</seg>
+      </bo>
+      <position x="830.0" y="350.0"/>
+      <size width="501.0" height="170.0"/>
+    </element>
+    <element uuid="c5ffdaa5-3a64-4e1b-a130-151f6320d839" manual="true">
+      <element uuid="bb184da5-2aab-4625-a9e9-5262bcafd8ea" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>stop_extend_ev_open_ev_stimulate_close_ev.stop_extend_ev_open_ev_stimulate_close_ev_impl</seg>
+      </bo>
+      <position x="40.0" y="340.0"/>
+      <size width="771.0" height="35.0"/>
+    </element>
+    <bo>
+      <seg>package</seg>
+      <seg>digitalpart_threadgroup_extendgears</seg>
+    </bo>
+    <position x="-340.0" y="10.0"/>
+    <size width="2085.0" height="1015.0"/>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>digitalpart_threadgroup_extendgears</seg>
+    </context>
+  </config>
+</diagram:Diagram>

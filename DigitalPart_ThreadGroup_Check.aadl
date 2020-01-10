@@ -1,0 +1,82 @@
+package DigitalPart_ThreadGroup_Check
+public
+	with DigitalPart_ThreadGroup_RetractGears;
+	with DigitalPart;
+	with Base_Types;
+
+	thread group DigitalPart_ThreadGroup_Check
+		features
+			Analogical_switch: in data port DigitalPart::handle_status;
+			Handle: in data port DigitalPart::handle_status;
+			Circuit_pressurized: in data port Base_Types::Boolean;
+			General_EV: in data port Base_Types::Boolean;
+			Door_closed: in data port Base_Types::Boolean;
+			Open_EV: in data port Base_Types::Boolean;
+			Door_open: in data port Base_Types::Boolean;
+			Gear_extended: in data port Base_Types::Boolean;
+			Close_EV: in data port Base_Types::Boolean;
+			Retract_EV: in data port Base_Types::Boolean;
+			Gear_retracted: in data port Base_Types::Boolean;
+			Extend_EV: in data port Base_Types::Boolean;
+			In_anomally: out data port Base_Types::Boolean;
+	end DigitalPart_ThreadGroup_Check;
+
+	thread group implementation DigitalPart_ThreadGroup_Check.DigitalPart_ThreadGroup_Check_impl
+	end DigitalPart_ThreadGroup_Check.DigitalPart_ThreadGroup_Check_impl;
+
+	thread DigitalPart_Thread_CheckAnalogicalSwitch_1
+		features
+			Analogical_switch: in data port DigitalPart::switch_status;
+			Handle: in data port DigitalPart::handle_status;
+			In_anomaly: out data port Base_Types::Boolean;
+	end DigitalPart_Thread_CheckAnalogicalSwitch_1;
+
+	thread DigitalPart_Thread_CheckAnalogicalSwitch_2
+		features
+			Analogical_switch: in data port DigitalPart::switch_status;
+			Handle: in data port DigitalPart::switch_status;
+			In_anomaly: out data port;
+	end DigitalPart_Thread_CheckAnalogicalSwitch_2;
+
+	thread DigitalPart_Thread_CheckCircuitPressurized_1
+		features
+			Circuit_pressurized: in data port Base_Types::Boolean;
+			General_EV: in data port Base_Types::Boolean;
+			In_anomaly: out data port Base_Types::Boolean;
+	end DigitalPart_Thread_CheckCircuitPressurized_1;
+
+	thread DigitalPart_Thread_CheckCircuitPressurized_2
+		features
+			Circuit_pressurized: in data port Base_Types::Boolean;
+			General_EV: in data port Base_Types::Boolean;
+			In_anomaly: out data port;
+	end DigitalPart_Thread_CheckCircuitPressurized_2;
+
+	thread DigitalPart_Thread_CheckDoors_1
+		features
+			Door_closed: in data port Base_Types::Boolean;
+			Open_EV: in data port Base_Types::Boolean;
+			In_anomaly: out data port;
+	end DigitalPart_Thread_CheckDoors_1;
+
+	thread DigitalPart_Thread_CheckDoors_2
+		features
+			Door_open: in data port Base_Types::Boolean;
+			Open_EV: in data port Base_Types::Boolean;
+			In_anomaly: out data port;
+	end DigitalPart_Thread_CheckDoors_2;
+
+	thread DigitalPart_Thread_CheckDoors_3
+		features
+			Door_open: in data port Base_Types::Boolean;
+			Close_EV: in data port Base_Types::Boolean;
+			In_anomaly: out data port;
+	end DigitalPart_Thread_CheckDoors_3;
+
+	thread DigitalPart_Thread_CheckDoors_4
+		features
+			Door_closed: in data port Base_Types::Boolean;
+			Close_EV: in data port Base_Types::Boolean;
+			In_anomaly: out data port;
+	end DigitalPart_Thread_CheckDoors_4;
+end DigitalPart_ThreadGroup_Check;
